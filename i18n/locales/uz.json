@@ -85,7 +85,13 @@
       "Testlar",
       "Deploy",
       "Sayt onlayn"
-    ]
+    ],
+    "demo": {
+      "chatUser": "Ertaga yozilmoqchiman",
+      "chatBot": "15:00 bo‘sh, tasdiqlaymizmi?",
+      "chatPaid": "To‘landi · yozuv yaratildi",
+      "siteUrl": "saytingiz.uz"
+    }
   },
   "work": {
     "label": "03 / Ishlar",

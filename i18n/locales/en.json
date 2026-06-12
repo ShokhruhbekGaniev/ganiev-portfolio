@@ -85,7 +85,13 @@
       "Tests",
       "Deploy",
       "Site is live"
-    ]
+    ],
+    "demo": {
+      "chatUser": "I'd like to book for tomorrow",
+      "chatBot": "3pm is free — confirm?",
+      "chatPaid": "Paid · booking created",
+      "siteUrl": "yoursite.uz"
+    }
   },
   "work": {
     "label": "03 / Selected work",
