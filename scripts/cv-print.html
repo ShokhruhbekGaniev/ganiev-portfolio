@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shokhrukhbek Ganiev — CV</title>
+<style>
+  @page { size: A4; margin: 11mm 13mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9pt; line-height: 1.36; color: #141519; }
+  .accent { color: #5d7a00; }
+  header { border-bottom: 2.5pt solid #141519; padding-bottom: 10pt; margin-bottom: 12pt; }
+  h1 { font-size: 23pt; letter-spacing: -0.5pt; font-weight: 800; }
+  .tagline { font-size: 10.5pt; margin-top: 2pt; font-weight: 600; }
+  .contacts { margin-top: 6pt; font-size: 8.5pt; color: #444; }
+  .contacts span + span::before { content: "  ·  "; }
+  h2 { font-size: 9.5pt; text-transform: uppercase; letter-spacing: 1.5pt; color: #5d7a00; margin: 9pt 0 4pt; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-title { font-weight: 700; font-size: 10.5pt; }
+  .period { font-size: 8.5pt; color: #555; }
+  ul { margin: 3pt 0 0 12pt; }
+  li { margin-bottom: 2pt; }
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2pt 16pt; }
+  .skills-grid p { margin-bottom: 2.5pt; }
+  .skills-grid b { font-weight: 700; }
+  .proj { margin-bottom: 6pt; }
+  .proj-name { font-weight: 700; }
+  .proj-link { color: #5d7a00; font-size: 8.5pt; text-decoration: none; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18pt; }
+  .summary { margin-top: 2pt; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>SHOKHRUKHBEK GANIEV</h1>
+    <p class="tagline">Frontend Engineer · Vue 3 / TypeScript · <span class="accent">Fintech</span></p>
+    <p class="contacts">
+      <span>Tashkent, Uzbekistan</span>
+      <span>shohchik9999@gmail.com</span>
+      <span>t.me/sh_ganiev</span>
+      <span>github.com/ShokhruhbekGaniev</span>
+      <span>linkedin.com/in/shokhrukhbek-ganiev</span>
+    </p>
+  </header>
+
+  <h2>Summary</h2>
+  <p class="summary">Frontend Developer with 2.5+ years of commercial experience building enterprise admin and management systems in fintech. Strong expertise in Vue.js + TypeScript with focus on scalable component architecture, complex multi-step workflows and performance optimization. Experienced with national service integrations (E-IMZO digital signature, MyID identification, KATM credit bureau), real-time data via WebSocket, and unit testing. Applying SOLID principles in agile teams alongside architects, designers and backend engineers.</p>
+
+  <h2>Experience</h2>
+  <div class="job-head">
+    <p class="job-title">Frontend Developer — Fintech Company, Tashkent</p>
+    <p class="period">Nov 2023 — Present</p>
+  </div>
+  <ul>
+    <li>Built a complete production frontend from scratch for an SME financing product (Vue 3 + TypeScript + Pinia): component hierarchy, routing structure, state management architecture, multi-step forms with conditional logic and full draft-to-approval lifecycle.</li>
+    <li>Implemented multi-limit business logic: 5 limit types with monthly calculations, freeze/unfreeze, scoring integration and a limit increase calculator with history tracking.</li>
+    <li>Integrated E-IMZO digital signatures (modal signing flow for legally binding documents), MyID identification and KATM credit bureau reports inside application review workflows.</li>
+    <li>Implemented WebSocket real-time updates in monitoring dashboards for live card operations and transaction tracking.</li>
+    <li>Improved Lighthouse performance 54% → 74% and accessibility 66% → 87% (lazy loading, code splitting, WebP 2.5MB → 60KB, adaptive srcset); set up Lighthouse CI quality gates in GitHub Actions that block PRs over budget.</li>
+    <li>Built compliance &amp; risk modules: auto-review workflows, alternative reporting, cash-hold management, fraud detection ticket system.</li>
+    <li>Published an internal MCP server npm package exposing the company's closed-source UI library to AI tools (search, listing, component details).</li>
+    <li>Led ESLint standardization across projects: strict TypeScript rules, architectural import restrictions, zero-warnings CI policy. Migrated build tooling from Vue CLI to Vite.</li>
+    <li>Delivered multilingual UI (Russian/Uzbek) with dynamic locale switching. Worked across 9 product teams; 134 tasks / 232 story points delivered. Mentored junior developers and actively drove code reviews.</li>
+  </ul>
+
+  <h2>Projects</h2>
+  <div class="proj">
+    <p><span class="proj-name">Hamyonimda</span> — <a class="proj-link" href="https://hamyonimda.uz">hamyonimda.uz</a> · own product</p>
+    <p>Voice AI personal finance tracker: users dictate expenses to a Telegram bot, AI parses amount and category; Telegram Mini App + web dashboard. Go, Vue 3, PostgreSQL, Docker.</p>
+  </div>
+  <div class="proj">
+    <p><span class="proj-name">Skale</span> — <a class="proj-link" href="https://skale.uz">skale.uz</a></p>
+    <p>Conversion-focused site for a growth-marketing agency: Next.js, React Three Fiber 3D hero, GSAP/Lenis scroll choreography, static-export CI pipeline.</p>
+  </div>
+  <div class="proj">
+    <p><span class="proj-name">FIDES</span> — <a class="proj-link" href="https://globalfides.com">globalfides.com</a></p>
+    <p>Medical tourism platform for Uzbekistan: clinics, doctors, transparent pricing, multilingual content.</p>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <h2>Skills</h2>
+      <div>
+        <p><b>Core:</b> Vue 3 (Composition API), TypeScript, Pinia, Vue Router, Vite, Nuxt 3</p>
+        <p><b>UI:</b> Tailwind CSS, shadcn-vue, GSAP, vee-validate + Zod</p>
+        <p><b>Testing:</b> Vitest, Vue Test Utils, E2E basics</p>
+        <p><b>Auth &amp; integrations:</b> Keycloak, OAuth2, JWT, E-IMZO, MyID, KATM, REST, WebSocket</p>
+        <p><b>DevOps:</b> Docker, Nginx, GitHub Actions, Lighthouse CI</p>
+        <p><b>Additional:</b> Go (REST APIs), PostgreSQL</p>
+      </div>
+    </div>
+    <div>
+      <h2>Education &amp; Languages</h2>
+      <p><b>BSc in Information Technology</b><br>Amity University, 2020 — 2024</p>
+      <p style="margin-top:5pt"><b>Languages:</b> Russian (native), Uzbek (native), English (intermediate)</p>
+    </div>
+  </div>
+</body>
+</html>

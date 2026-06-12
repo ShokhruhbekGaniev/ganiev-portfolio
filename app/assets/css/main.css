@@ -1,0 +1,158 @@
+@import 'tailwindcss';
+
+/* ---------------------------------- */
+/* Fintech Noir — design tokens       */
+/* ---------------------------------- */
+
+:root {
+  /* dark (default) */
+  --ink: #0a0b0d;
+  --ink-2: #101216;
+  --ink-3: #16181d;
+  --paper: #f4f3ee;
+  --text: #eceae3;
+  --text-muted: #8d8f96;
+  --line: rgba(236, 234, 227, 0.1);
+  --lime: #c6f432;
+  --lime-dim: rgba(198, 244, 50, 0.12);
+  --glow: rgba(198, 244, 50, 0.07);
+}
+
+html.light {
+  --ink: #f4f3ee;
+  --ink-2: #eceae2;
+  --ink-3: #e2e0d6;
+  --paper: #0a0b0d;
+  --text: #141519;
+  --text-muted: #5c5e66;
+  --line: rgba(20, 21, 25, 0.12);
+  --lime: #5d7a00;
+  --lime-dim: rgba(93, 122, 0, 0.1);
+  --glow: rgba(93, 122, 0, 0.05);
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-paper: var(--paper);
+  --color-body: var(--text);
+  --color-muted: var(--text-muted);
+  --color-line: var(--line);
+  --color-lime: var(--lime);
+  --color-lime-dim: var(--lime-dim);
+
+  --font-display: 'Clash Display', 'Space Grotesk', sans-serif;
+  --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* ---------------------------------- */
+/* Base                               */
+/* ---------------------------------- */
+
+html {
+  scroll-behavior: auto; /* GSAP owns scrolling */
+}
+
+body {
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+::selection {
+  background: var(--lime);
+  color: #0a0b0d;
+}
+
+:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ink);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--ink-3);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--lime);
+}
+
+/* ---------------------------------- */
+/* Utilities                          */
+/* ---------------------------------- */
+
+/* film grain overlay */
+.grain::after {
+  content: '';
+  position: fixed;
+  inset: -200%;
+  width: 400%;
+  height: 400%;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 8s steps(10) infinite;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grain::after {
+    animation: none;
+  }
+}
+
+/* mono label — section indices */
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--lime);
+}
+
+/* big display heading */
+.display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+}
+
+/* hide content until GSAP takes over — only when JS is on and motion allowed */
+html.js:not(.no-anim) .gs-reveal {
+  visibility: hidden;
+}
+
+/* marquee */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
