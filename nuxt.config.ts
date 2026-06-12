@@ -4,6 +4,20 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-06-13',
   devtools: { enabled: false },
 
+  modules: ['@nuxtjs/i18n'],
+
+  i18n: {
+    defaultLocale: 'ru',
+    strategy: 'prefix_except_default',
+    locales: [
+      { code: 'ru', language: 'ru-RU', name: 'Русский', file: 'ru.json' },
+      { code: 'uz', language: 'uz-UZ', name: 'O‘zbekcha', file: 'uz.json' },
+      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' },
+    ],
+    baseUrl: 'https://ganiev-portfolio.pages.dev',
+    detectBrowserLanguage: false,
+  },
+
   css: ['~/assets/css/main.css'],
 
   runtimeConfig: {

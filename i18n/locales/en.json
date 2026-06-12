@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "terminal": "Terminal",
+    "contact": "Contact"
+  },
+  "hero": {
+    "label": "Full-stack developer · Tashkent",
+    "tagline": "3+ years building products end to end: frontend, backend, deployment. Websites, web apps and Telegram bots — delivered turnkey.",
+    "ctaPrimary": "Discuss a project",
+    "ctaSecondary": "My work",
+    "open": "Open to projects",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "label": "01 / About",
+    "line1": "I cover the whole development cycle.",
+    "line2": "3+ years in IT: from fintech interfaces to my own products. Interface, server, database, deployment — I walk the full path from idea to a working product myself.",
+    "line3": "My product Hamyonimda — a voice AI finance tracker — I built entirely: from the first line of code to production.",
+    "stats": [
+      {
+        "value": 3,
+        "suffix": "+",
+        "label": "years in IT"
+      },
+      {
+        "value": 10,
+        "suffix": "+",
+        "label": "projects in production"
+      },
+      {
+        "value": 100,
+        "suffix": "%",
+        "label": "turnkey: code → server → prod"
+      }
+    ]
+  },
+  "services": {
+    "label": "02 / Services",
+    "title": "A website built turnkey — from idea to production.",
+    "items": [
+      {
+        "title": "Websites & web apps",
+        "body": "Landing pages, corporate sites, web applications. Fast, animated, with a perfect Lighthouse score.",
+        "tags": [
+          "Vue / Nuxt",
+          "Animations",
+          "SEO"
+        ]
+      },
+      {
+        "title": "Backend & API",
+        "body": "Server logic, databases, payment and auth integrations. Reliable and scalable.",
+        "tags": [
+          "Go",
+          "PostgreSQL",
+          "REST API"
+        ]
+      },
+      {
+        "title": "Telegram bots & Mini Apps",
+        "body": "Bots, mini apps inside Telegram, payment processing. From booking flows to full products.",
+        "tags": [
+          "Bot API",
+          "Mini Apps",
+          "Payments"
+        ]
+      },
+      {
+        "title": "Deployment & support",
+        "body": "Server, domain, SSL, CI/CD, monitoring. I launch it and keep it running 24/7.",
+        "tags": [
+          "Docker",
+          "Nginx",
+          "CI/CD"
+        ]
+      }
+    ],
+    "pipelineTitle": "What it looks like",
+    "pipeline": [
+      "git push",
+      "Build",
+      "Tests",
+      "Deploy",
+      "Site is live"
+    ]
+  },
+  "work": {
+    "label": "03 / Selected work",
+    "ownProduct": "Own product",
+    "agency": "Agency site",
+    "platform": "Platform",
+    "projects": {
+      "hamyonimda": "Voice AI personal finance tracker. Speak an expense to a Telegram bot — AI parses the amount and category, everything lands in a Mini App and web dashboard.",
+      "skale": "Conversion-focused site for a Tashkent marketing agency: 3D dispersed glass hero, scroll choreography, static export.",
+      "fides": "Medical tourism platform for Uzbekistan: clinics, doctors, transparent pricing, end-to-end support."
+    }
+  },
+  "terminal": {
+    "label": "04 / Terminal",
+    "title": "Talk to the site.",
+    "hint": "Type {help} and press Enter",
+    "welcome": "Hi! This is an interactive terminal. Type `help` to see what I can do.",
+    "help": "Available commands:\n  about      — who I am\n  services   — what I do\n  projects   — my work\n  contact    — how to reach me\n  lang ru / uz / en — switch language\n  theme      — toggle theme\n  clear      — clear screen",
+    "about": "Shokhrukhbek Ganiev. Full-stack developer from Tashkent. 3+ years in IT: frontend, backend, deployment — A to Z.",
+    "services": "Turnkey delivery: websites and web apps, backend and APIs, Telegram bots and Mini Apps, deployment and support.",
+    "projects": "hamyonimda.uz — voice AI finance tracker (own product)\nskale.uz — marketing agency site\nglobalfides.com — medical tourism platform",
+    "contact": "Telegram: t.me/sh_ganiev\nEmail: shohchik9999{'@'}gmail.com\nGitHub: github.com/ShokhruhbekGaniev",
+    "langChanged": "Language switched.",
+    "themeChanged": "Theme toggled.",
+    "notFound": "Command not found. Type `help`.",
+    "sudo": "Nice try. But I'm the only root here :)"
+  },
+  "contact": {
+    "label": "05 / Contact",
+    "title": "Got an idea? Let's {accent} it.",
+    "titleAccent": "build",
+    "subtitle": "I reply fast. Describe the task in a couple of sentences — we'll figure out how to solve it.",
+    "cta": "Message me on Telegram",
+    "or": "or",
+    "downloadCv": "Download CV",
+    "footerBuilt": "Tashkent, Uzbekistan · Built with Nuxt + GSAP"
+  },
+  "palette": {
+    "placeholder": "Command or section…",
+    "navigate": "Navigation",
+    "actions": "Actions",
+    "theme": "Toggle theme",
+    "langRu": "Language: Русский",
+    "langUz": "Language: O‘zbekcha",
+    "langEn": "Language: English",
+    "telegram": "Message on Telegram",
+    "github": "Open GitHub",
+    "cv": "Download CV",
+    "hint": "for commands"
+  },
+  "meta": {
+    "title": "Shokhrukhbek Ganiev — Full-stack Developer",
+    "description": "Full-stack developer from Tashkent. Websites, web apps and Telegram bots delivered turnkey: frontend, backend, deployment. 3+ years of experience."
+  }
+}

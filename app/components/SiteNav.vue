@@ -1,13 +1,17 @@
 <script setup lang="ts">
-const emit = defineEmits<{ navigate: [target: string] }>()
+const emit = defineEmits<{ navigate: [target: string]; toggleTheme: [] }>()
 
-const links = [
-  { label: 'About', target: '#about' },
-  { label: 'Experience', target: '#experience' },
-  { label: 'Projects', target: '#projects' },
-  { label: 'Skills', target: '#skills' },
-  { label: 'Contact', target: '#contact' },
-]
+const { t, locale, setLocale } = useI18n()
+
+const links = computed(() => [
+  { label: t('nav.about'), target: '#about' },
+  { label: t('nav.services'), target: '#services' },
+  { label: t('nav.work'), target: '#work' },
+  { label: t('nav.terminal'), target: '#terminal' },
+  { label: t('nav.contact'), target: '#contact' },
+])
+
+const locales = ['ru', 'uz', 'en'] as const
 
 const isLight = ref(false)
 
@@ -21,7 +25,10 @@ function toggleTheme() {
   try {
     localStorage.setItem('theme', isLight.value ? 'light' : 'dark')
   } catch {}
+  emit('toggleTheme')
 }
+
+defineExpose({ toggleTheme })
 </script>
 
 <template>
@@ -41,8 +48,8 @@ function toggleTheme() {
         SG<span class="text-lime">.</span>
       </button>
 
-      <div class="flex items-center gap-1 md:gap-2">
-        <ul class="hidden items-center gap-1 md:flex">
+      <div class="flex items-center gap-2 md:gap-3">
+        <ul class="hidden items-center gap-1 lg:flex">
           <li v-for="link in links" :key="link.target">
             <button
               class="cursor-pointer rounded px-3 py-2 font-mono text-xs uppercase tracking-[0.15em] text-muted transition-colors duration-200 hover:text-lime"
@@ -52,6 +59,20 @@ function toggleTheme() {
             </button>
           </li>
         </ul>
+
+        <!-- language switcher -->
+        <div class="flex items-center overflow-hidden rounded-full border border-line">
+          <button
+            v-for="code in locales"
+            :key="code"
+            class="cursor-pointer px-2.5 py-1.5 font-mono text-[11px] uppercase tracking-wider transition-colors duration-200"
+            :class="locale === code ? 'bg-lime text-[#0a0b0d] font-bold' : 'text-muted hover:text-lime'"
+            :aria-label="`Switch language to ${code}`"
+            @click="setLocale(code)"
+          >
+            {{ code }}
+          </button>
+        </div>
 
         <button
           class="cursor-pointer rounded p-2 text-muted transition-colors duration-200 hover:text-lime"

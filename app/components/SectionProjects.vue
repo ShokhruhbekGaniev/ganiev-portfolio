@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { projects } from '~/data/content'
 
+const { t } = useI18n()
 const { gsap } = useGsap()
 
 const root = ref<HTMLElement | null>(null)
@@ -21,7 +22,6 @@ onMounted(() => {
         scrollTrigger: { trigger: card, start: 'top 85%' },
       })
 
-      // pointer tilt (fine pointers only)
       if (matchMedia('(pointer: fine)').matches) {
         const rx = gsap.quickTo(card, 'rotationX', { duration: 0.5, ease: 'power3' })
         const ry = gsap.quickTo(card, 'rotationY', { duration: 0.5, ease: 'power3' })
@@ -44,8 +44,8 @@ onUnmounted(() => ctx?.revert())
 </script>
 
 <template>
-  <section id="projects" ref="root" class="mx-auto max-w-7xl px-5 py-28 md:px-10 md:py-40">
-    <p class="label-mono mb-10 md:mb-16">03 / Selected work</p>
+  <section id="work" ref="root" class="mx-auto max-w-7xl px-5 py-28 md:px-10 md:py-40">
+    <p class="label-mono mb-10 md:mb-16">{{ t('work.label') }}</p>
 
     <div class="grid gap-6 lg:grid-cols-3">
       <a
@@ -55,18 +55,15 @@ onUnmounted(() => ctx?.revert())
         target="_blank"
         rel="noopener"
         class="project-card group relative flex flex-col rounded-xl border p-8 transition-colors duration-300 gs-reveal md:p-10"
-        :class="
-          project.accent
-            ? 'border-lime/40 bg-lime-dim hover:border-lime'
-            : 'border-line bg-ink-2 hover:border-lime/40'
-        "
+        :class="project.accent ? 'border-lime/40 bg-lime-dim hover:border-lime' : 'border-line hover:border-lime/40'"
+        :style="project.accent ? '' : 'background: var(--ink-2)'"
       >
         <div class="flex items-center justify-between">
           <span
             class="rounded-full px-3 py-1 font-mono text-[11px] uppercase tracking-wider"
             :class="project.accent ? 'bg-lime text-[#0a0b0d]' : 'border border-line text-muted'"
           >
-            {{ project.badge }}
+            {{ t(`work.${project.badgeKey}`) }}
           </span>
           <svg
             class="h-5 w-5 text-muted transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-lime"
@@ -78,7 +75,7 @@ onUnmounted(() => ctx?.revert())
 
         <h3 class="display mt-10 text-3xl text-body md:mt-14 md:text-4xl">{{ project.name }}</h3>
         <p class="mt-1 font-mono text-xs tracking-wider text-lime">{{ project.domain }}</p>
-        <p class="mt-5 flex-1 leading-relaxed text-muted">{{ project.description }}</p>
+        <p class="mt-5 flex-1 leading-relaxed text-muted">{{ t(`work.projects.${project.descKey}`) }}</p>
 
         <ul class="mt-8 flex flex-wrap gap-2">
           <li

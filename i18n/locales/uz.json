@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "about": "Men haqimda",
+    "services": "Xizmatlar",
+    "work": "Ishlar",
+    "terminal": "Terminal",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "label": "Full-stack dasturchi · Toshkent",
+    "tagline": "3+ yildan beri mahsulotlarni A dan Z gacha yarataman: frontend, backend, deploy. Saytlar, veb-ilovalar va Telegram-botlar — kalit topshirish sharti bilan.",
+    "ctaPrimary": "Loyihani muhokama qilish",
+    "ctaSecondary": "Ishlarim",
+    "open": "Loyihalarga ochiqman",
+    "scroll": "Pastga"
+  },
+  "about": {
+    "label": "01 / Men haqimda",
+    "line1": "Men dasturlashning butun siklini yopaman.",
+    "line2": "IT da 3+ yil: fintexdagi interfeyslardan o‘z mahsulotlarimgacha. Interfeys, server, ma'lumotlar bazasi, deploy — g‘oyadan ishlaydigan mahsulotgacha bo‘lgan yo‘lni o‘zim bosib o‘taman.",
+    "line3": "Mening mahsulotim Hamyonimda — ovozli AI moliya trekeri — birinchi qator koddan prodgacha o‘zim yaratdim.",
+    "stats": [
+      {
+        "value": 3,
+        "suffix": "+",
+        "label": "yil IT da"
+      },
+      {
+        "value": 10,
+        "suffix": "+",
+        "label": "loyiha prodda"
+      },
+      {
+        "value": 100,
+        "suffix": "%",
+        "label": "kalit topshirish: kod → server → prod"
+      }
+    ]
+  },
+  "services": {
+    "label": "02 / Xizmatlar",
+    "title": "Sayt — g‘oyadan prodgacha, kalit topshirish sharti bilan.",
+    "items": [
+      {
+        "title": "Saytlar va veb-ilovalar",
+        "body": "Landinglar, korporativ saytlar, veb-ilovalar. Tezkor, animatsiyali, mukammal Lighthouse bilan.",
+        "tags": [
+          "Vue / Nuxt",
+          "Animatsiya",
+          "SEO"
+        ]
+      },
+      {
+        "title": "Backend va API",
+        "body": "Server logikasi, ma'lumotlar bazalari, to‘lov va avtorizatsiya integratsiyalari. Ishonchli va kengaytiriladigan.",
+        "tags": [
+          "Go",
+          "PostgreSQL",
+          "REST API"
+        ]
+      },
+      {
+        "title": "Telegram-botlar va Mini Apps",
+        "body": "Botlar, Telegram ichidagi mini-ilovalar, to‘lov qabul qilish. Mijoz yozuvidan to‘liq mahsulotlargacha.",
+        "tags": [
+          "Bot API",
+          "Mini Apps",
+          "To‘lovlar"
+        ]
+      },
+      {
+        "title": "Deploy va qo‘llab-quvvatlash",
+        "body": "Server, domen, SSL, CI/CD, monitoring. Ishga tushiraman va 24/7 ishlashini kuzataman.",
+        "tags": [
+          "Docker",
+          "Nginx",
+          "CI/CD"
+        ]
+      }
+    ],
+    "pipelineTitle": "Bu qanday ko‘rinadi",
+    "pipeline": [
+      "git push",
+      "Build",
+      "Testlar",
+      "Deploy",
+      "Sayt onlayn"
+    ]
+  },
+  "work": {
+    "label": "03 / Ishlar",
+    "ownProduct": "Mening mahsulotim",
+    "agency": "Agentlik sayti",
+    "platform": "Platforma",
+    "projects": {
+      "hamyonimda": "Ovozli AI shaxsiy moliya trekeri. Xarajatni Telegram-botga aytasiz — AI summa va kategoriyani aniqlaydi, hammasi Mini App va veb-dashbordda ko‘rinadi.",
+      "skale": "Toshkentdagi marketing-agentlik uchun konversion sayt: hero da 3D shisha, scroll-xoreografiya, statik eksport.",
+      "fides": "O‘zbekistonda tibbiy turizm platformasi: klinikalar, shifokorlar, shaffof narxlar, to‘liq hamrohlik."
+    }
+  },
+  "terminal": {
+    "label": "04 / Terminal",
+    "title": "Sayt bilan gaplash.",
+    "hint": "{help} yozib Enter bosing",
+    "welcome": "Salom! Bu interaktiv terminal. `help` yozing — nima qila olishimni ko‘rsataman.",
+    "help": "Mavjud buyruqlar:\n  about      — men kimman\n  services   — nima qilaman\n  projects   — ishlarim\n  contact    — bog‘lanish\n  lang ru / uz / en — tilni almashtirish\n  theme      — mavzuni almashtirish\n  clear      — ekranni tozalash",
+    "about": "Shohruhbek G‘aniyev. Toshkentlik full-stack dasturchi. IT da 3+ yil: frontend, backend, deploy — A dan Z gacha.",
+    "services": "Kalit topshirish sharti bilan: saytlar va veb-ilovalar, backend va API, Telegram-botlar va Mini Apps, deploy va qo‘llab-quvvatlash.",
+    "projects": "hamyonimda.uz — ovozli AI moliya trekeri (mening mahsulotim)\nskale.uz — marketing-agentlik sayti\nglobalfides.com — tibbiy turizm platformasi",
+    "contact": "Telegram: t.me/sh_ganiev\nEmail: shohchik9999{'@'}gmail.com\nGitHub: github.com/ShokhruhbekGaniev",
+    "langChanged": "Til almashtirildi.",
+    "themeChanged": "Mavzu almashtirildi.",
+    "notFound": "Buyruq topilmadi. `help` yozing.",
+    "sudo": "Yaxshi urinish. Lekin bu yerda root faqat men :)"
+  },
+  "contact": {
+    "label": "05 / Aloqa",
+    "title": "G‘oya bormi? Keling {accent}.",
+    "titleAccent": "qilamiz",
+    "subtitle": "Tez javob beraman. Vazifani ikki og‘iz so‘z bilan yozing — qanday hal qilishni muhokama qilamiz.",
+    "cta": "Telegramda yozish",
+    "or": "yoki",
+    "downloadCv": "CV yuklab olish",
+    "footerBuilt": "Toshkent, O‘zbekiston · Nuxt + GSAP da yaratilgan"
+  },
+  "palette": {
+    "placeholder": "Buyruq yoki bo‘lim…",
+    "navigate": "Navigatsiya",
+    "actions": "Amallar",
+    "theme": "Mavzuni almashtirish",
+    "langRu": "Til: Русский",
+    "langUz": "Til: O‘zbekcha",
+    "langEn": "Til: English",
+    "telegram": "Telegramda yozish",
+    "github": "GitHub ni ochish",
+    "cv": "CV yuklab olish",
+    "hint": "buyruqlar uchun"
+  },
+  "meta": {
+    "title": "Shohruhbek G‘aniyev — Full-stack dasturchi",
+    "description": "Toshkentlik full-stack dasturchi. Saytlar, veb-ilovalar va Telegram-botlar kalit topshirish sharti bilan: frontend, backend, deploy. 3+ yil tajriba."
+  }
+}

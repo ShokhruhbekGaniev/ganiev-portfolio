@@ -1,17 +1,18 @@
 <script setup lang="ts">
 import { profile } from '~/data/content'
 
+const emit = defineEmits<{ navigate: [target: string] }>()
+
+const { t } = useI18n()
 const { gsap, SplitText } = useGsap()
 
 const root = ref<HTMLElement | null>(null)
-const orb = ref<HTMLElement | null>(null)
 let ctx: gsap.Context | undefined
 
 onMounted(() => {
   if (!root.value || prefersReducedMotion()) return
 
   ctx = gsap.context(() => {
-    // --- load choreography -------------------------------------------------
     const tl = gsap.timeline({ defaults: { ease: 'power4.out' } })
 
     document.fonts.ready.then(() => {
@@ -27,7 +28,6 @@ onMounted(() => {
         .fromTo('.hero-scroll-hint', { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.6 }, '-=0.2')
     })
 
-    // --- infinite marquee ---------------------------------------------------
     gsap.to('.hero-marquee .marquee-track', {
       xPercent: -50,
       duration: 28,
@@ -35,23 +35,12 @@ onMounted(() => {
       repeat: -1,
     })
 
-    // --- parallax drift on scroll out ----------------------------------------
     gsap.to('.hero-inner', {
       yPercent: -12,
       autoAlpha: 0.25,
       ease: 'none',
       scrollTrigger: { trigger: root.value, start: 'top top', end: 'bottom top', scrub: true },
     })
-
-    // --- mouse-follow glow orb ----------------------------------------------
-    if (orb.value && matchMedia('(pointer: fine)').matches) {
-      const xTo = gsap.quickTo(orb.value, 'x', { duration: 0.9, ease: 'power3' })
-      const yTo = gsap.quickTo(orb.value, 'y', { duration: 0.9, ease: 'power3' })
-      window.addEventListener('mousemove', (e) => {
-        xTo(e.clientX)
-        yTo(e.clientY)
-      })
-    }
   }, root.value)
 })
 
@@ -60,23 +49,8 @@ onUnmounted(() => ctx?.revert())
 
 <template>
   <section id="hero" ref="root" class="relative flex min-h-svh flex-col justify-center overflow-hidden">
-    <!-- atmospheric glow -->
-    <div
-      ref="orb"
-      class="pointer-events-none absolute -top-40 -left-40 h-[34rem] w-[34rem] rounded-full blur-[120px]"
-      style="background: var(--glow)"
-      aria-hidden="true"
-    />
-    <div
-      class="pointer-events-none absolute right-[-10%] top-[15%] h-[28rem] w-[28rem] rounded-full blur-[140px] opacity-60"
-      style="background: var(--glow)"
-      aria-hidden="true"
-    />
-
     <div class="hero-inner mx-auto w-full max-w-7xl px-5 pt-24 md:px-10">
-      <p class="hero-meta label-mono mb-6 gs-reveal">
-        {{ profile.role }} · {{ profile.location }}
-      </p>
+      <p class="hero-meta label-mono mb-6 gs-reveal">{{ t('hero.label') }}</p>
 
       <h1
         class="display text-[clamp(2rem,10vw,8.6rem)] leading-[0.9] tracking-[-0.03em]"
@@ -86,17 +60,35 @@ onUnmounted(() => ctx?.revert())
         <span class="hero-name-last block whitespace-nowrap text-lime gs-reveal">GANIEV</span>
       </h1>
 
-      <div class="mt-10 flex flex-col gap-6 md:mt-14 md:flex-row md:items-end md:justify-between">
-        <p class="hero-meta max-w-md text-base leading-relaxed text-muted gs-reveal md:text-lg">
-          Building fintech products that move real money — with Vue, TypeScript and an obsession for detail.
+      <div class="mt-10 flex flex-col gap-8 md:mt-14 md:flex-row md:items-end md:justify-between">
+        <p class="hero-meta max-w-xl text-base leading-relaxed text-muted gs-reveal md:text-lg">
+          {{ t('hero.tagline') }}
         </p>
-        <p class="hero-meta font-mono text-xs uppercase tracking-[0.2em] text-muted gs-reveal">
-          Open to opportunities
-        </p>
+
+        <div class="hero-meta flex flex-wrap items-center gap-4 gs-reveal">
+          <a
+            href="https://t.me/sh_ganiev"
+            target="_blank"
+            rel="noopener"
+            data-magnetic
+            class="inline-flex cursor-pointer items-center gap-2.5 rounded-full bg-lime px-7 py-3.5 font-mono text-sm font-medium uppercase tracking-[0.1em] text-[#0a0b0d] transition-opacity duration-200 hover:opacity-85"
+          >
+            {{ t('hero.ctaPrimary') }}
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14m-6-6 6 6-6 6" />
+            </svg>
+          </a>
+          <button
+            data-magnetic
+            class="inline-flex cursor-pointer items-center rounded-full border border-line px-7 py-3.5 font-mono text-sm uppercase tracking-[0.1em] text-body transition-colors duration-200 hover:border-lime/50 hover:text-lime"
+            @click="emit('navigate', '#work')"
+          >
+            {{ t('hero.ctaSecondary') }}
+          </button>
+        </div>
       </div>
     </div>
 
-    <!-- rotating words marquee -->
     <div class="hero-marquee mt-16 overflow-hidden border-y border-line py-4 gs-reveal md:mt-20" aria-hidden="true">
       <div class="marquee-track">
         <span
@@ -111,7 +103,7 @@ onUnmounted(() => ctx?.revert())
     </div>
 
     <p class="hero-scroll-hint absolute bottom-6 left-1/2 -translate-x-1/2 font-mono text-[10px] uppercase tracking-[0.3em] text-muted gs-reveal">
-      Scroll
+      {{ t('hero.scroll') }}
     </p>
   </section>
 </template>
