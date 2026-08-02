@@ -1,29 +1,29 @@
 {
   "nav": {
     "about": "About",
-    "services": "Services",
+    "services": "Expertise",
     "work": "Work",
     "terminal": "Terminal",
     "contact": "Contact"
   },
   "hero": {
-    "label": "Full-stack developer · Tashkent",
-    "tagline": "3+ years building products end to end: frontend, backend, deployment. Websites, web apps and Telegram bots — delivered turnkey.",
-    "ctaPrimary": "Discuss a project",
+    "label": "Software Engineer · Tashkent",
+    "tagline": "Frontend in Vue/TypeScript + backend in Go. 3+ years in fintech, own products in production — from the first line of code to the server.",
+    "ctaPrimary": "Get in touch",
     "ctaSecondary": "My work",
-    "open": "Open to projects",
+    "open": "Open to opportunities",
     "scroll": "Scroll"
   },
   "about": {
     "label": "01 / About",
     "line1": "I cover the whole development cycle.",
-    "line2": "3+ years in IT: from fintech interfaces to my own products. Interface, server, database, deployment — I walk the full path from idea to a working product myself.",
-    "line3": "My product Hamyonimda — a voice AI finance tracker — I built entirely: from the first line of code to production.",
+    "line2": "3+ years of engineering at Uzbekistan's leading fintech: built an SME product frontend from scratch — 273 applications in the first two weeks, performance 54→74%, Lighthouse CI in the pipeline, an internal MCP server for AI tools, e-imzo digital signature integration.",
+    "line3": "And I build my own products end to end: Hamyonimda — a voice AI finance tracker — from the first line of code to the Go backend, PostgreSQL and CI/CD on my own server.",
     "stats": [
       {
         "value": 3,
         "suffix": "+",
-        "label": "years in IT"
+        "label": "years in engineering"
       },
       {
         "value": 10,
@@ -31,28 +31,28 @@
         "label": "projects in production"
       },
       {
-        "value": 100,
-        "suffix": "%",
-        "label": "turnkey: code → server → prod"
+        "value": 134,
+        "suffix": "",
+        "label": "tasks a year · 9 teams"
       }
     ]
   },
   "services": {
-    "label": "02 / Services",
-    "title": "A website built turnkey — from idea to production.",
+    "label": "02 / Expertise",
+    "title": "Full-cycle engineering — from interface to infrastructure.",
     "items": [
       {
-        "title": "Websites & web apps",
-        "body": "Landing pages, corporate sites, web applications. Fast, animated, with a perfect Lighthouse score.",
+        "title": "Frontend Engineering",
+        "body": "Vue / Nuxt applications with complex business logic: performance, accessibility, animations, a perfect Lighthouse score.",
         "tags": [
           "Vue / Nuxt",
-          "Animations",
-          "SEO"
+          "TypeScript",
+          "Performance"
         ]
       },
       {
         "title": "Backend & API",
-        "body": "Server logic, databases, payment and auth integrations. Reliable and scalable.",
+        "body": "Services in Go: REST APIs, PostgreSQL, payment and auth integrations. Reliable and scalable.",
         "tags": [
           "Go",
           "PostgreSQL",
@@ -60,8 +60,8 @@
         ]
       },
       {
-        "title": "Telegram bots & Mini Apps",
-        "body": "Bots, mini apps inside Telegram, payment processing. From booking flows to full products.",
+        "title": "Telegram platforms",
+        "body": "Bots and Mini Apps with payment processing — full products inside Telegram, from booking flows to fintech services.",
         "tags": [
           "Bot API",
           "Mini Apps",
@@ -69,8 +69,8 @@
         ]
       },
       {
-        "title": "Deployment & support",
-        "body": "Server, domain, SSL, CI/CD, monitoring. I launch it and keep it running 24/7.",
+        "title": "Infrastructure & CI/CD",
+        "body": "Docker, Nginx, pipelines, monitoring. The service lives in production 24/7 — and I know exactly how it feels.",
         "tags": [
           "Docker",
           "Nginx",
@@ -90,7 +90,7 @@
       "chatUser": "I'd like to book for tomorrow",
       "chatBot": "3pm is free — confirm?",
       "chatPaid": "Paid · booking created",
-      "siteUrl": "yoursite.uz"
+      "siteUrl": "demo-app.uz"
     }
   },
   "work": {
@@ -99,7 +99,7 @@
     "agency": "Agency site",
     "platform": "Platform",
     "projects": {
-      "hamyonimda": "Voice AI personal finance tracker. Speak an expense to a Telegram bot — AI parses the amount and category, everything lands in a Mini App and web dashboard.",
+      "hamyonimda": "Voice AI personal finance tracker. Speak an expense to a Telegram bot — AI parses the amount and category. Go backend, PostgreSQL, Mini App, web dashboard and CI/CD — the whole stack is mine.",
       "skale": "Conversion-focused site for a Tashkent marketing agency: 3D dispersed glass hero, scroll choreography, static export.",
       "fides": "Medical tourism platform for Uzbekistan: clinics, doctors, transparent pricing, end-to-end support."
     }
@@ -110,8 +110,8 @@
     "hint": "Type {help} and press Enter",
     "welcome": "Hi! This is an interactive terminal. Type `help` to see what I can do.",
     "help": "Available commands:\n  about      — who I am\n  services   — what I do\n  projects   — my work\n  contact    — how to reach me\n  lang ru / uz / en — switch language\n  theme      — toggle theme\n  clear      — clear screen",
-    "about": "Shokhrukhbek Ganiev. Full-stack developer from Tashkent. 3+ years in IT: frontend, backend, deployment — A to Z.",
-    "services": "Turnkey delivery: websites and web apps, backend and APIs, Telegram bots and Mini Apps, deployment and support.",
+    "about": "Shokhrukhbek Ganiev. Software Engineer from Tashkent: frontend in Vue/TS + backend in Go. 3+ years in fintech, own products in production.",
+    "services": "Frontend Engineering (Vue/Nuxt), backend & APIs in Go, Telegram bots and Mini Apps, infrastructure and CI/CD.",
     "projects": "hamyonimda.uz — voice AI finance tracker (own product)\nskale.uz — marketing agency site\nglobalfides.com — medical tourism platform",
     "contact": "Telegram: t.me/sh_ganiev\nEmail: shohchik9999{'@'}gmail.com\nGitHub: github.com/ShokhruhbekGaniev",
     "langChanged": "Language switched.",
@@ -121,9 +121,9 @@
   },
   "contact": {
     "label": "05 / Contact",
-    "title": "Got an idea? Let's {accent} it.",
+    "title": "Got a challenge? Let's {accent} it.",
     "titleAccent": "build",
-    "subtitle": "I reply fast. Describe the task in a couple of sentences — we'll figure out how to solve it.",
+    "subtitle": "I reply fast. A role, a project or just a question — describe it in a couple of sentences.",
     "cta": "Message me on Telegram",
     "or": "or",
     "downloadCv": "Download CV",
@@ -143,7 +143,7 @@
     "hint": "for commands"
   },
   "meta": {
-    "title": "Shokhrukhbek Ganiev — Full-stack Developer",
-    "description": "Full-stack developer from Tashkent. Websites, web apps and Telegram bots delivered turnkey: frontend, backend, deployment. 3+ years of experience."
+    "title": "Shokhrukhbek Ganiev — Software Engineer (Vue/TS + Go)",
+    "description": "Software Engineer from Tashkent: frontend in Vue/TypeScript + backend in Go. 3+ years in fintech, own products in production — from code to infrastructure."
   }
 }

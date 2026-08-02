@@ -1,29 +1,29 @@
 {
   "nav": {
     "about": "Men haqimda",
-    "services": "Xizmatlar",
+    "services": "Yo‘nalishlar",
     "work": "Ishlar",
     "terminal": "Terminal",
     "contact": "Aloqa"
   },
   "hero": {
-    "label": "Full-stack dasturchi · Toshkent",
-    "tagline": "3+ yildan beri mahsulotlarni A dan Z gacha yarataman: frontend, backend, deploy. Saytlar, veb-ilovalar va Telegram-botlar — kalit topshirish sharti bilan.",
-    "ctaPrimary": "Loyihani muhokama qilish",
+    "label": "Software Engineer · Toshkent",
+    "tagline": "Vue/TypeScript da frontend + Go da backend. Fintexda 3+ yil, o‘z mahsulotlarim prodda — birinchi qator koddan servergacha.",
+    "ctaPrimary": "Bog‘lanish",
     "ctaSecondary": "Ishlarim",
-    "open": "Loyihalarga ochiqman",
+    "open": "Takliflarga ochiqman",
     "scroll": "Pastga"
   },
   "about": {
     "label": "01 / Men haqimda",
     "line1": "Men dasturlashning butun siklini yopaman.",
-    "line2": "IT da 3+ yil: fintexdagi interfeyslardan o‘z mahsulotlarimgacha. Interfeys, server, ma'lumotlar bazasi, deploy — g‘oyadan ishlaydigan mahsulotgacha bo‘lgan yo‘lni o‘zim bosib o‘taman.",
-    "line3": "Mening mahsulotim Hamyonimda — ovozli AI moliya trekeri — birinchi qator koddan prodgacha o‘zim yaratdim.",
+    "line2": "O‘zbekistonning yetakchi fintexida 3+ yil injenerlik: SME mahsuloti frontendini noldan qurdim — birinchi ikki haftada 273 ariza, performance 54→74%, pipeline’da Lighthouse CI, AI vositalari uchun ichki MCP-server, e-imzo integratsiyasi.",
+    "line3": "O‘z mahsulotlarimni esa to‘liq o‘zim yig‘aman: Hamyonimda — ovozli AI moliya trekeri — birinchi qator koddan Go-backend, PostgreSQL va o‘z serverimdagi CI/CD gacha.",
     "stats": [
       {
         "value": 3,
         "suffix": "+",
-        "label": "yil IT da"
+        "label": "yil injenerlikda"
       },
       {
         "value": 10,
@@ -31,28 +31,28 @@
         "label": "loyiha prodda"
       },
       {
-        "value": 100,
-        "suffix": "%",
-        "label": "kalit topshirish: kod → server → prod"
+        "value": 134,
+        "suffix": "",
+        "label": "vazifa yiliga · 9 jamoa"
       }
     ]
   },
   "services": {
-    "label": "02 / Xizmatlar",
-    "title": "Sayt — g‘oyadan prodgacha, kalit topshirish sharti bilan.",
+    "label": "02 / Yo‘nalishlar",
+    "title": "To‘liq sikl injenerligi — interfeysdan infratuzilmagacha.",
     "items": [
       {
-        "title": "Saytlar va veb-ilovalar",
-        "body": "Landinglar, korporativ saytlar, veb-ilovalar. Tezkor, animatsiyali, mukammal Lighthouse bilan.",
+        "title": "Frontend Engineering",
+        "body": "Murakkab biznes-logikali Vue / Nuxt ilovalar: performance, accessibility, animatsiyalar, mukammal Lighthouse.",
         "tags": [
           "Vue / Nuxt",
-          "Animatsiya",
-          "SEO"
+          "TypeScript",
+          "Performance"
         ]
       },
       {
         "title": "Backend va API",
-        "body": "Server logikasi, ma'lumotlar bazalari, to‘lov va avtorizatsiya integratsiyalari. Ishonchli va kengaytiriladigan.",
+        "body": "Go da servislar: REST API, PostgreSQL, to‘lov va avtorizatsiya integratsiyalari. Ishonchli va kengaytiriladigan.",
         "tags": [
           "Go",
           "PostgreSQL",
@@ -60,8 +60,8 @@
         ]
       },
       {
-        "title": "Telegram-botlar va Mini Apps",
-        "body": "Botlar, Telegram ichidagi mini-ilovalar, to‘lov qabul qilish. Mijoz yozuvidan to‘liq mahsulotlargacha.",
+        "title": "Telegram platformalari",
+        "body": "To‘lov qabul qiladigan botlar va Mini Apps — Telegram ichidagi to‘liq mahsulotlar, yozuvdan fintex-servislargacha.",
         "tags": [
           "Bot API",
           "Mini Apps",
@@ -69,8 +69,8 @@
         ]
       },
       {
-        "title": "Deploy va qo‘llab-quvvatlash",
-        "body": "Server, domen, SSL, CI/CD, monitoring. Ishga tushiraman va 24/7 ishlashini kuzataman.",
+        "title": "Infratuzilma va CI/CD",
+        "body": "Docker, Nginx, pipeline’lar, monitoring. Servis prodda 24/7 yashaydi — va men uning ahvolini doim bilaman.",
         "tags": [
           "Docker",
           "Nginx",
@@ -90,7 +90,7 @@
       "chatUser": "Ertaga yozilmoqchiman",
       "chatBot": "15:00 bo‘sh, tasdiqlaymizmi?",
       "chatPaid": "To‘landi · yozuv yaratildi",
-      "siteUrl": "saytingiz.uz"
+      "siteUrl": "demo-app.uz"
     }
   },
   "work": {
@@ -99,7 +99,7 @@
     "agency": "Agentlik sayti",
     "platform": "Platforma",
     "projects": {
-      "hamyonimda": "Ovozli AI shaxsiy moliya trekeri. Xarajatni Telegram-botga aytasiz — AI summa va kategoriyani aniqlaydi, hammasi Mini App va veb-dashbordda ko‘rinadi.",
+      "hamyonimda": "Ovozli AI shaxsiy moliya trekeri. Xarajatni Telegram-botga aytasiz — AI summa va kategoriyani aniqlaydi. Go-backend, PostgreSQL, Mini App, veb-dashbord va CI/CD — butun stek meniki.",
       "skale": "Toshkentdagi marketing-agentlik uchun konversion sayt: hero da 3D shisha, scroll-xoreografiya, statik eksport.",
       "fides": "O‘zbekistonda tibbiy turizm platformasi: klinikalar, shifokorlar, shaffof narxlar, to‘liq hamrohlik."
     }
@@ -110,8 +110,8 @@
     "hint": "{help} yozib Enter bosing",
     "welcome": "Salom! Bu interaktiv terminal. `help` yozing — nima qila olishimni ko‘rsataman.",
     "help": "Mavjud buyruqlar:\n  about      — men kimman\n  services   — nima qilaman\n  projects   — ishlarim\n  contact    — bog‘lanish\n  lang ru / uz / en — tilni almashtirish\n  theme      — mavzuni almashtirish\n  clear      — ekranni tozalash",
-    "about": "Shohruhbek G‘aniyev. Toshkentlik full-stack dasturchi. IT da 3+ yil: frontend, backend, deploy — A dan Z gacha.",
-    "services": "Kalit topshirish sharti bilan: saytlar va veb-ilovalar, backend va API, Telegram-botlar va Mini Apps, deploy va qo‘llab-quvvatlash.",
+    "about": "Shohruhbek G‘aniyev. Toshkentlik Software Engineer: Vue/TS da frontend + Go da backend. Fintexda 3+ yil, o‘z mahsulotlarim prodda.",
+    "services": "Frontend Engineering (Vue/Nuxt), Go da backend va API, Telegram-botlar va Mini Apps, infratuzilma va CI/CD.",
     "projects": "hamyonimda.uz — ovozli AI moliya trekeri (mening mahsulotim)\nskale.uz — marketing-agentlik sayti\nglobalfides.com — tibbiy turizm platformasi",
     "contact": "Telegram: t.me/sh_ganiev\nEmail: shohchik9999{'@'}gmail.com\nGitHub: github.com/ShokhruhbekGaniev",
     "langChanged": "Til almashtirildi.",
@@ -121,9 +121,9 @@
   },
   "contact": {
     "label": "05 / Aloqa",
-    "title": "G‘oya bormi? Keling {accent}.",
+    "title": "Vazifa bormi? Keling {accent}.",
     "titleAccent": "qilamiz",
-    "subtitle": "Tez javob beraman. Vazifani ikki og‘iz so‘z bilan yozing — qanday hal qilishni muhokama qilamiz.",
+    "subtitle": "Tez javob beraman. Vakansiya, loyiha yoki oddiy savol — ikki og‘iz so‘z bilan yozing.",
     "cta": "Telegramda yozish",
     "or": "yoki",
     "downloadCv": "CV yuklab olish",
@@ -143,7 +143,7 @@
     "hint": "buyruqlar uchun"
   },
   "meta": {
-    "title": "Shohruhbek G‘aniyev — Full-stack dasturchi",
-    "description": "Toshkentlik full-stack dasturchi. Saytlar, veb-ilovalar va Telegram-botlar kalit topshirish sharti bilan: frontend, backend, deploy. 3+ yil tajriba."
+    "title": "Shohruhbek G‘aniyev — Software Engineer (Vue/TS + Go)",
+    "description": "Toshkentlik Software Engineer: Vue/TypeScript da frontend + Go da backend. Fintexda 3+ yil, o‘z mahsulotlar prodda — koddan infratuzilmagacha."
   }
 }
