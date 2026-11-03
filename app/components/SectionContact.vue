@@ -118,6 +118,13 @@ onUnmounted(() => ctx?.revert())
               <path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14" />
             </svg>
           </a>
+          <a
+            href="/Shokhrukhbek_Ganiev_CV.docx"
+            download
+            class="inline-flex min-h-11 cursor-pointer items-center rounded-full border border-line px-5 py-2.5 font-mono text-xs uppercase tracking-[0.12em] text-muted transition-colors duration-200 hover:border-lime/50 hover:text-lime"
+          >
+            {{ t('contact.downloadWord') }}
+          </a>
         </div>
       </div>
     </div>

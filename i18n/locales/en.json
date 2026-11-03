@@ -7,74 +7,74 @@
     "contact": "Contact"
   },
   "hero": {
-    "label": "Software Engineer · Tashkent",
-    "tagline": "Frontend in Vue/TypeScript + backend in Go. 3+ years in fintech, own products in production — from the first line of code to the server.",
-    "ctaPrimary": "Get in touch",
-    "ctaSecondary": "My work",
+    "label": "Full-Stack AI Engineer · Tashkent",
+    "tagline": "I build AI products from interface to infrastructure. Go, TypeScript and Vue/Nuxt — with hands-on work on voice pipelines, tool-using assistants and evaluations.",
+    "ctaPrimary": "Download CV · PDF",
+    "ctaSecondary": "Explore Hamyonimda",
     "open": "Open to opportunities",
     "scroll": "Scroll"
   },
   "about": {
     "label": "01 / About",
-    "line1": "I cover the whole development cycle.",
-    "line2": "3+ years of engineering at Uzbekistan's leading fintech: built an SME product frontend from scratch — 273 applications in the first two weeks, performance 54→74%, Lighthouse CI in the pipeline, an internal MCP server for AI tools, e-imzo digital signature integration.",
-    "line3": "And I build my own products end to end: Hamyonimda — a voice AI finance tracker — from the first line of code to the Go backend, PostgreSQL and CI/CD on my own server.",
+    "line1": "AI products, built end to end.",
+    "line2": "Since November 2023, I have built fintech interfaces with complex business logic: an SME financing frontend from scratch, digital-signature integrations, performance improvements and an internal MCP server for AI development tools.",
+    "line3": "I also created Hamyonimda from scratch: a personal finance product with a Go backend, Vue/Nuxt interfaces, voice and SMS intake, payments and deployment infrastructure. My AI work includes model comparisons, failure recovery and multilingual evaluations.",
     "stats": [
       {
-        "value": 3,
-        "suffix": "+",
-        "label": "years in engineering"
-      },
-      {
-        "value": 10,
-        "suffix": "+",
-        "label": "projects in production"
-      },
-      {
-        "value": 134,
+        "value": 2023,
         "suffix": "",
-        "label": "tasks a year · 9 teams"
+        "label": "commercial fintech experience since Nov 2023"
+      },
+      {
+        "value": 3,
+        "suffix": "",
+        "label": "product surfaces: bot, Mini App and web"
+      },
+      {
+        "value": 3,
+        "suffix": "",
+        "label": "product languages: Uzbek, Russian and English"
       }
     ]
   },
   "services": {
     "label": "02 / Expertise",
-    "title": "Full-cycle engineering — from interface to infrastructure.",
+    "title": "From useful interfaces to AI systems.",
     "items": [
       {
-        "title": "Frontend Engineering",
-        "body": "Vue / Nuxt applications with complex business logic: performance, accessibility, animations, a perfect Lighthouse score.",
+        "title": "Product interfaces",
+        "body": "Vue and Nuxt applications with complex state, financial workflows and attention to performance and accessibility.",
         "tags": [
           "Vue / Nuxt",
           "TypeScript",
-          "Performance"
+          "Product UX"
         ]
       },
       {
-        "title": "Backend & API",
-        "body": "Services in Go: REST APIs, PostgreSQL, payment and auth integrations. Reliable and scalable.",
+        "title": "Backend & data",
+        "body": "Go APIs, PostgreSQL, asynchronous workers, payment integrations and transactional financial logic.",
         "tags": [
           "Go",
           "PostgreSQL",
-          "REST API"
+          "Redis / Asynq"
         ]
       },
       {
-        "title": "Telegram platforms",
-        "body": "Bots and Mini Apps with payment processing — full products inside Telegram, from booking flows to fintech services.",
+        "title": "Applied AI",
+        "body": "Speech-to-text, structured extraction, tool-using assistants and MCP. Model choices tested against correctness, latency and cost.",
         "tags": [
-          "Bot API",
-          "Mini Apps",
-          "Payments"
+          "LLM APIs",
+          "MCP",
+          "Evaluations"
         ]
       },
       {
-        "title": "Infrastructure & CI/CD",
-        "body": "Docker, Nginx, pipelines, monitoring. The service lives in production 24/7 — and I know exactly how it feels.",
+        "title": "Delivery & operations",
+        "body": "Docker deployments, CI/CD, monitoring and recovery from production failures. Ownership continues after launch.",
         "tags": [
           "Docker",
-          "Nginx",
-          "CI/CD"
+          "GitHub Actions",
+          "Sentry"
         ]
       }
     ],
@@ -87,9 +87,9 @@
       "Site is live"
     ],
     "demo": {
-      "chatUser": "I'd like to book for tomorrow",
-      "chatBot": "3pm is free — confirm?",
-      "chatPaid": "Paid · booking created",
+      "chatUser": "Spent 50,000 on lunch",
+      "chatBot": "Expense · Food · 50,000 UZS",
+      "chatPaid": "Amount and category extracted",
       "siteUrl": "demo-app.uz"
     }
   },
@@ -99,9 +99,20 @@
     "agency": "Agency site",
     "platform": "Platform",
     "projects": {
-      "hamyonimda": "Voice AI personal finance tracker. Speak an expense to a Telegram bot — AI parses the amount and category. Go backend, PostgreSQL, Mini App, web dashboard and CI/CD — the whole stack is mine.",
+      "hamyonimda": "Voice, bank SMS and text become financial records across a Telegram bot, Mini App and web dashboard, with payments and multilingual interfaces.",
       "skale": "Conversion-focused site for a Tashkent marketing agency: 3D dispersed glass hero, scroll choreography, static export.",
       "fides": "Medical tourism platform for Uzbekistan: clinics, doctors, transparent pricing, end-to-end support."
+    },
+    "caseStudy": {
+      "eyebrow": "Featured product · Built from scratch",
+      "intro": "Personal finance that starts with your voice.",
+      "ownership": "I designed and built the frontend, backend, AI integrations and deployment infrastructure. One product, from the Telegram experience to the database and production operations.",
+      "visit": "Visit Hamyonimda",
+      "productTitle": "A product people can use",
+      "productBody": "Voice, bank SMS and text become financial records across a Telegram bot, Mini App and web dashboard, with payments and multilingual interfaces.",
+      "aiTitle": "Engineering beyond the prompt",
+      "aiBody": "Language-aware retries and provider fallback for voice intake. Hami development adds tool calling, calculations in Go and checks against tool results, supported by multilingual evaluations.",
+      "evaluation": "Correct amount extractions before and after pipeline/model changes on a 38-example evaluation set (66% → 92%). A scoped experiment, not a production-wide accuracy claim."
     }
   },
   "terminal": {
@@ -110,9 +121,9 @@
     "hint": "Type {help} and press Enter",
     "welcome": "Hi! This is an interactive terminal. Type `help` to see what I can do.",
     "help": "Available commands:\n  about      — who I am\n  services   — what I do\n  projects   — my work\n  contact    — how to reach me\n  lang ru / uz / en — switch language\n  theme      — toggle theme\n  clear      — clear screen",
-    "about": "Shokhrukhbek Ganiev. Software Engineer from Tashkent: frontend in Vue/TS + backend in Go. 3+ years in fintech, own products in production.",
-    "services": "Frontend Engineering (Vue/Nuxt), backend & APIs in Go, Telegram bots and Mini Apps, infrastructure and CI/CD.",
-    "projects": "hamyonimda.uz — voice AI finance tracker (own product)\nskale.uz — marketing agency site\nglobalfides.com — medical tourism platform",
+    "about": "Shokhrukhbek Ganiev. Full-Stack AI Engineer in Tashkent. Commercial fintech frontend work since November 2023; creator of Hamyonimda. Go, TypeScript, Vue/Nuxt and applied AI.",
+    "services": "Product interfaces, Go APIs and data, LLM integrations, tool-using assistants, MCP, evaluations and production delivery.",
+    "projects": "hamyonimda.uz — personal finance: voice/SMS intake, Go backend, Vue/Nuxt and AI assistant development\nskale.uz — marketing agency site\nglobalfides.com — medical tourism platform",
     "contact": "Telegram: t.me/sh_ganiev\nEmail: shohchik9999{'@'}gmail.com\nGitHub: github.com/ShokhruhbekGaniev",
     "langChanged": "Language switched.",
     "themeChanged": "Theme toggled.",
@@ -123,11 +134,12 @@
     "label": "05 / Contact",
     "title": "Got a challenge? Let's {accent} it.",
     "titleAccent": "build",
-    "subtitle": "I reply fast. A role, a project or just a question — describe it in a couple of sentences.",
+    "subtitle": "Hiring for full-stack or applied AI? Tell me about the product and the problem your team needs to solve.",
     "cta": "Message me on Telegram",
     "or": "or",
-    "downloadCv": "Download CV",
-    "footerBuilt": "Tashkent, Uzbekistan · Built with Nuxt + GSAP"
+    "downloadCv": "CV · PDF",
+    "footerBuilt": "Tashkent, Uzbekistan · Built with Nuxt + GSAP",
+    "downloadWord": "CV · Word"
   },
   "palette": {
     "placeholder": "Command or section…",
@@ -143,7 +155,7 @@
     "hint": "for commands"
   },
   "meta": {
-    "title": "Shokhrukhbek Ganiev — Software Engineer (Vue/TS + Go)",
-    "description": "Software Engineer from Tashkent: frontend in Vue/TypeScript + backend in Go. 3+ years in fintech, own products in production — from code to infrastructure."
+    "title": "Shokhrukhbek Ganiev — Full-Stack AI Engineer",
+    "description": "Full-Stack AI Engineer in Tashkent. Creator of Hamyonimda. Go, TypeScript, Vue/Nuxt, voice AI, LLM tool calling, MCP and evaluations."
   }
 }

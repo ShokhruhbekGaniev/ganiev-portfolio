@@ -4,7 +4,7 @@ export const profile = {
   telegram: 'https://t.me/sh_ganiev',
   github: 'https://github.com/ShokhruhbekGaniev',
   linkedin: 'https://linkedin.com/in/shokhrukhbek-ganiev',
-  heroWords: ['Frontend', 'Backend', 'Vue / Nuxt', 'TypeScript', 'Go', 'PostgreSQL', 'Docker', 'CI/CD', 'Telegram Bots', 'GSAP'],
+  heroWords: ['AI Products', 'Go', 'TypeScript', 'Vue / Nuxt', 'LLM APIs', 'MCP', 'Evaluations', 'PostgreSQL', 'Docker', 'CI/CD'],
 }
 
 export const projects = [

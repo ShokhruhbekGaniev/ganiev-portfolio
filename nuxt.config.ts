@@ -34,19 +34,19 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'en' },
-      title: 'Shokhrukhbek Ganiev — Frontend Engineer',
+      title: 'Shokhrukhbek Ganiev — Full-Stack AI Engineer',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'description',
           content:
-            'Frontend Engineer in Tashkent. Vue 3 + TypeScript in fintech: SME financing products, E-IMZO / MyID / KATM integrations, real-time dashboards, performance engineering.',
+            'Full-Stack AI Engineer in Tashkent. Creator of Hamyonimda. Go, TypeScript, Vue/Nuxt, voice AI, LLM tool calling, MCP and evaluations.',
         },
-        { property: 'og:title', content: 'Shokhrukhbek Ganiev — Frontend Engineer' },
+        { property: 'og:title', content: 'Shokhrukhbek Ganiev — Full-Stack AI Engineer' },
         {
           property: 'og:description',
           content:
-            'Frontend Engineer building fintech products with Vue 3 + TypeScript. Creator of Hamyonimda — voice AI finance tracker.',
+            'Full-Stack AI Engineer in Tashkent. Creator of Hamyonimda. Go, TypeScript, Vue/Nuxt, voice AI, LLM tool calling, MCP and evaluations.',
         },
         { property: 'og:type', content: 'website' },
       ],

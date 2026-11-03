@@ -1,0 +1,47 @@
+{
+  "name": "Shokhrukhbek Ganiev",
+  "title": "Full-Stack AI Engineer",
+  "location": "Tashkent, Uzbekistan",
+  "email": "shohchik9999@gmail.com",
+  "links": [
+    ["Portfolio", "https://ganiev-portfolio.pages.dev/en"],
+    ["GitHub", "https://github.com/ShokhruhbekGaniev"],
+    ["LinkedIn", "https://linkedin.com/in/shokhrukhbek-ganiev"],
+    ["Telegram", "https://t.me/sh_ganiev"]
+  ],
+  "summary": "Full-stack engineer building AI-powered products with Go, TypeScript and Vue/Nuxt. Commercial fintech frontend experience since November 2023. Creator of Hamyonimda, a deployed personal finance product spanning voice input, LLM extraction, payments and infrastructure. Builds tool-using assistants and evaluates their correctness, latency and cost.",
+  "product": {
+    "name": "Hamyonimda",
+    "role": "Creator and Full-Stack Developer",
+    "period": "2026 - Present",
+    "url": "https://hamyonimda.uz",
+    "description": "Independent product: AI-powered personal finance for Uzbekistan, delivered through a Telegram bot, Mini App and web dashboard.",
+    "bullets": [
+      "Built and deployed the product from scratch: Go REST APIs, Vue/Nuxt interfaces, PostgreSQL, Redis/Asynq workers, payment integrations and Docker-based CI/CD on a self-managed VPS.",
+      "Developed voice and bank-SMS intake with speech-to-text and structured LLM outputs. Added language-aware retries, provider fallback and partial-input recovery for Uzbek/Russian financial commands.",
+      "Improved amount extraction from 25/38 to 35/38 correct cases (66% to 92%) on a 38-example evaluation set by comparing speech-recognition and LLM parsing configurations.",
+      "Developed Hami, a Go-based financial assistant with tool calling, server-scoped user access, deterministic monetary calculations and numerical-answer verification against tool results.",
+      "Built multilingual evaluations for tool selection, numerical correctness, refusals and prompt injection, tracking latency and model cost; implemented an MCP server with OAuth and PKCE."
+    ]
+  },
+  "experience": {
+    "company": "Alif",
+    "role": "Frontend Developer",
+    "context": "Fintech, Tashkent",
+    "period": "Nov 2023 - Present",
+    "bullets": [
+      "Built the Vue 3/TypeScript frontend for an SME financing product from scratch, including multi-step applications, state management and review workflows. The product received 273 applications and UZS 21B in approved limits within two weeks of launch.",
+      "Developed and published an internal MCP server for a private UI library, exposing component search, listings and details to AI development tools.",
+      "Raised Lighthouse performance from 54 to 74 and accessibility from 66 to 87; introduced Lighthouse CI quality gates and optimized image delivery, lazy loading and code splitting.",
+      "Implemented E-IMZO digital signatures, MyID and KATM integrations, multi-limit business logic and WebSocket dashboards; contributed across nine product teams."
+    ]
+  },
+  "skills": [
+    ["AI engineering", "LLM APIs, structured outputs, tool calling, MCP, speech-to-text, evaluations"],
+    ["Backend", "Go, chi, pgx/sqlc, PostgreSQL, Redis, Asynq, REST APIs, OAuth, JWT"],
+    ["Frontend", "TypeScript, Vue 3, Nuxt, Pinia, Tailwind CSS, Vite, Telegram Mini Apps"],
+    ["Delivery and testing", "Docker, Nginx, GitHub Actions, Sentry, Go tests, Vitest, Vue Test Utils"]
+  ],
+  "education": "BSc in Information Technology, Amity University, 2020 - 2024",
+  "languages": "Uzbek and Russian: native. English: professional working proficiency."
+}

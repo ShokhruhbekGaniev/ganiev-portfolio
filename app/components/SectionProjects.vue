@@ -47,9 +47,40 @@ onUnmounted(() => ctx?.revert())
   <section id="work" ref="root" class="mx-auto max-w-7xl px-5 py-28 md:px-10 md:py-40">
     <p class="label-mono mb-10 md:mb-16">{{ t('work.label') }}</p>
 
-    <div class="grid gap-6 lg:grid-cols-3">
+    <article id="hamyonimda" class="mb-8 scroll-mt-24 rounded-xl border border-lime/40 bg-lime-dim p-6 md:p-10 lg:p-12" aria-labelledby="hamyonimda-title">
+      <div class="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16">
+        <div>
+          <p class="label-mono">{{ t('work.caseStudy.eyebrow') }}</p>
+          <h2 id="hamyonimda-title" class="display mt-6 text-4xl text-body md:text-6xl">Hamyonimda</h2>
+          <p class="mt-5 max-w-xl text-lg leading-relaxed text-body">{{ t('work.caseStudy.intro') }}</p>
+          <p class="mt-5 max-w-xl leading-relaxed text-muted">{{ t('work.caseStudy.ownership') }}</p>
+          <a href="https://hamyonimda.uz" target="_blank" rel="noopener" class="mt-8 inline-flex min-h-11 items-center gap-3 rounded-full border border-lime/50 px-6 py-3 font-mono text-sm text-lime transition-colors hover:bg-lime-dim">
+            {{ t('work.caseStudy.visit') }} <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="space-y-7">
+          <div>
+            <h3 class="text-lg font-semibold text-body">{{ t('work.caseStudy.productTitle') }}</h3>
+            <p class="mt-2 leading-relaxed text-muted">{{ t('work.caseStudy.productBody') }}</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-body">{{ t('work.caseStudy.aiTitle') }}</h3>
+            <p class="mt-2 leading-relaxed text-muted">{{ t('work.caseStudy.aiBody') }}</p>
+          </div>
+          <div class="border-t border-lime/20 pt-6">
+            <p class="display text-4xl text-lime md:text-5xl">25/38 <span class="text-muted" aria-hidden="true">→</span> 35/38</p>
+            <p class="mt-3 text-sm leading-relaxed text-muted">{{ t('work.caseStudy.evaluation') }}</p>
+          </div>
+        </div>
+      </div>
+      <ul class="mt-10 flex flex-wrap gap-x-6 gap-y-3 border-t border-lime/20 pt-6 font-mono text-xs text-muted" aria-label="Technology stack">
+        <li v-for="tech in ['Go', 'Vue / Nuxt', 'PostgreSQL', 'Redis / Asynq', 'LLM APIs', 'MCP', 'Docker / CI/CD']" :key="tech">{{ tech }}</li>
+      </ul>
+    </article>
+
+    <div class="grid gap-6 md:grid-cols-2">
       <a
-        v-for="project in projects"
+        v-for="project in projects.filter(p => !p.accent)"
         :key="project.name"
         :href="project.url"
         target="_blank"

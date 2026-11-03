@@ -67,9 +67,8 @@ onUnmounted(() => ctx?.revert())
 
         <div class="hero-meta flex flex-wrap items-center gap-4 gs-reveal">
           <a
-            href="https://t.me/sh_ganiev"
-            target="_blank"
-            rel="noopener"
+            href="/Shokhrukhbek_Ganiev_CV.pdf"
+            download
             data-magnetic
             class="inline-flex cursor-pointer items-center gap-2.5 rounded-full bg-lime px-7 py-3.5 font-mono text-sm font-medium uppercase tracking-[0.1em] text-[#0a0b0d] transition-opacity duration-200 hover:opacity-85"
           >

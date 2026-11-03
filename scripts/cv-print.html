@@ -1,98 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Shokhrukhbek Ganiev — CV</title>
-<style>
-  @page { size: A4; margin: 11mm 13mm; }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9pt; line-height: 1.36; color: #141519; }
-  .accent { color: #5d7a00; }
-  header { border-bottom: 2.5pt solid #141519; padding-bottom: 10pt; margin-bottom: 12pt; }
-  h1 { font-size: 23pt; letter-spacing: -0.5pt; font-weight: 800; }
-  .tagline { font-size: 10.5pt; margin-top: 2pt; font-weight: 600; }
-  .contacts { margin-top: 6pt; font-size: 8.5pt; color: #444; }
-  .contacts span + span::before { content: "  ·  "; }
-  h2 { font-size: 9.5pt; text-transform: uppercase; letter-spacing: 1.5pt; color: #5d7a00; margin: 9pt 0 4pt; }
-  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
-  .job-title { font-weight: 700; font-size: 10.5pt; }
-  .period { font-size: 8.5pt; color: #555; }
-  ul { margin: 3pt 0 0 12pt; }
-  li { margin-bottom: 2pt; }
-  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2pt 16pt; }
-  .skills-grid p { margin-bottom: 2.5pt; }
-  .skills-grid b { font-weight: 700; }
-  .proj { margin-bottom: 6pt; }
-  .proj-name { font-weight: 700; }
-  .proj-link { color: #5d7a00; font-size: 8.5pt; text-decoration: none; }
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18pt; }
-  .summary { margin-top: 2pt; }
-</style>
-</head>
-<body>
-  <header>
-    <h1>SHOKHRUKHBEK GANIEV</h1>
-    <p class="tagline">Software Engineer · Frontend (Vue 3 / TypeScript) + <span class="accent">Go</span></p>
-    <p class="contacts">
-      <span>Tashkent, Uzbekistan</span>
-      <span>shohchik9999@gmail.com</span>
-      <span>t.me/sh_ganiev</span>
-      <span>github.com/ShokhruhbekGaniev</span>
-      <span>linkedin.com/in/shokhrukhbek-ganiev</span>
-    </p>
-  </header>
-
-  <h2>Summary</h2>
-  <p class="summary">Software Engineer with 3+ years of commercial experience in fintech, with a Vue 3 + TypeScript frontend core and Go on the backend. At Alif built a complete SME financing frontend from scratch (273 applications and 21B UZS in limits within two weeks of launch) and shipped platform work across 9 product teams. Outside work I ship products end-to-end — Go REST APIs, PostgreSQL, Docker, CI/CD and monitoring on my own infrastructure — including Hamyonimda, a voice-AI finance tracker in production. Experienced with national service integrations (E-IMZO digital signature, MyID, KATM credit bureau), real-time data via WebSocket, and performance engineering.</p>
-
-  <h2>Experience</h2>
-  <div class="job-head">
-    <p class="job-title">Frontend Developer — Alif (fintech), Tashkent</p>
-    <p class="period">Aug 2023 — Present</p>
-  </div>
-  <ul>
-    <li>Built a complete production frontend from scratch for an SME financing product (Vue 3 + TypeScript + Pinia): component hierarchy, routing structure, state management architecture, multi-step forms with conditional logic and full draft-to-approval lifecycle. Result: 273 applications and 21B UZS in approved limits within two weeks of launch.</li>
-    <li>Implemented multi-limit business logic: 5 limit types with monthly calculations, freeze/unfreeze, scoring integration and a limit increase calculator with history tracking.</li>
-    <li>Integrated E-IMZO digital signatures (modal signing flow for legally binding documents), MyID identification and KATM credit bureau reports inside application review workflows.</li>
-    <li>Implemented WebSocket real-time updates in monitoring dashboards for live card operations and transaction tracking.</li>
-    <li>Improved Lighthouse performance 54% → 74% and accessibility 66% → 87% (lazy loading, code splitting, WebP 2.5MB → 60KB, adaptive srcset); set up Lighthouse CI quality gates in GitHub Actions that block PRs over budget.</li>
-    <li>Built compliance &amp; risk modules: auto-review workflows, alternative reporting, cash-hold management, fraud detection ticket system.</li>
-    <li>Published an internal MCP server npm package exposing the company's closed-source UI library to AI tools (search, listing, component details).</li>
-    <li>Led ESLint standardization across projects: strict TypeScript rules, architectural import restrictions, zero-warnings CI policy. Migrated build tooling from Vue CLI to Vite.</li>
-    <li>Delivered multilingual UI (Russian/Uzbek) with dynamic locale switching. Worked across 9 product teams; 134 tasks / 232 story points delivered. Mentored junior developers and actively drove code reviews.</li>
-  </ul>
-
-  <h2>Own Products — Built End-to-End</h2>
-  <div class="proj">
-    <p><span class="proj-name">Hamyonimda</span> — <a class="proj-link" href="https://hamyonimda.uz">hamyonimda.uz</a> · in production</p>
-    <p>Voice-AI personal finance tracker: users dictate expenses to a Telegram bot, AI parses amount and category; Telegram Mini App + web dashboard. Entire stack solo: Go REST API, PostgreSQL, Vue 3 / Nuxt, Payme payments, Docker images built in CI and pulled from GHCR, Nginx + TLS, Sentry monitoring on a self-managed VPS.</p>
-  </div>
-  <div class="proj">
-    <p><span class="proj-name">Skale</span> — <a class="proj-link" href="https://skale.uz">skale.uz</a></p>
-    <p>Conversion-focused site for a growth-marketing agency: Next.js, React Three Fiber 3D hero, GSAP/Lenis scroll choreography, static-export CI pipeline.</p>
-  </div>
-  <div class="proj">
-    <p><span class="proj-name">FIDES</span> — <a class="proj-link" href="https://globalfides.com">globalfides.com</a></p>
-    <p>Medical tourism platform for Uzbekistan: clinics, doctors, transparent pricing, multilingual content.</p>
-  </div>
-
-  <div class="two-col">
-    <div>
-      <h2>Skills</h2>
-      <div>
-        <p><b>Frontend:</b> Vue 3 (Composition API), TypeScript, Pinia, Vue Router, Vite, Nuxt 3</p>
-        <p><b>Backend:</b> Go (REST APIs, chi, pgx), PostgreSQL, Redis, Telegram Bot API</p>
-        <p><b>UI:</b> Tailwind CSS, shadcn-vue, GSAP, vee-validate + Zod</p>
-        <p><b>Auth &amp; integrations:</b> Keycloak, OAuth2, JWT, E-IMZO, MyID, KATM, Payme, WebSocket</p>
-        <p><b>Infra:</b> Docker, Nginx, GitHub Actions CI/CD, Sentry, Lighthouse CI</p>
-        <p><b>Testing:</b> Vitest, Vue Test Utils, E2E basics</p>
-      </div>
-    </div>
-    <div>
-      <h2>Education &amp; Languages</h2>
-      <p><b>BSc in Information Technology</b><br>Amity University, 2020 — 2024</p>
-      <p style="margin-top:5pt"><b>Languages:</b> Russian (native), Uzbek (native), English (B2)</p>
-    </div>
-  </div>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shokhrukhbek Ganiev - Full-Stack AI Engineer</title>
+<style>@page{size:Letter;margin:0.48in 0.62in}*{box-sizing:border-box}body{max-width:7.26in;margin:32px auto;color:#20272c;font:11pt/1.04 Carlito,Calibri,sans-serif}h1{font-size:25pt;color:#000;margin:0 0 3px}.role{font-size:14pt;color:#315b45;font-weight:bold;margin:0 0 7px}a{color:#315b45;text-decoration:none}p{margin:4px 0 6px}h2{font-size:10.5pt;color:#315b45;margin:13px 0 5px}h3{font-size:11pt;margin:4px 0}ul{padding-left:14px;margin:4px 0}li{margin:0 0 5px;break-inside:avoid}@media print{body{margin:0}}</style></head><body>
+<h1>Shokhrukhbek Ganiev</h1><p class="role">Full-Stack AI Engineer</p>
+<p>Tashkent, Uzbekistan · <a href="mailto:shohchik9999@gmail.com">shohchik9999@gmail.com</a></p><p><a href="https://ganiev-portfolio.pages.dev/en">Portfolio</a> · <a href="https://github.com/ShokhruhbekGaniev">GitHub</a> · <a href="https://linkedin.com/in/shokhrukhbek-ganiev">LinkedIn</a> · <a href="https://t.me/sh_ganiev">Telegram</a></p>
+<p>Full-stack engineer building AI-powered products with Go, TypeScript and Vue/Nuxt. Commercial fintech frontend experience since November 2023. Creator of Hamyonimda, a deployed personal finance product spanning voice input, LLM extraction, payments and infrastructure. Builds tool-using assistants and evaluates their correctness, latency and cost.</p>
+<h2>SELECTED AI PRODUCT</h2><h3>Hamyonimda - Creator and Full-Stack Developer · 2026 - Present</h3>
+<p><a href="https://hamyonimda.uz">hamyonimda.uz</a> · Independent product: AI-powered personal finance for Uzbekistan, delivered through a Telegram bot, Mini App and web dashboard.</p><ul><li>Built and deployed the product from scratch: Go REST APIs, Vue/Nuxt interfaces, PostgreSQL, Redis/Asynq workers, payment integrations and Docker-based CI/CD on a self-managed VPS.</li><li>Developed voice and bank-SMS intake with speech-to-text and structured LLM outputs. Added language-aware retries, provider fallback and partial-input recovery for Uzbek/Russian financial commands.</li><li>Improved amount extraction from 25/38 to 35/38 correct cases (66% to 92%) on a 38-example evaluation set by comparing speech-recognition and LLM parsing configurations.</li><li>Developed Hami, a Go-based financial assistant with tool calling, server-scoped user access, deterministic monetary calculations and numerical-answer verification against tool results.</li><li>Built multilingual evaluations for tool selection, numerical correctness, refusals and prompt injection, tracking latency and model cost; implemented an MCP server with OAuth and PKCE.</li></ul>
+<h2>PROFESSIONAL EXPERIENCE</h2><h3>Alif - Frontend Developer · Nov 2023 - Present</h3><ul><li>Built the Vue 3/TypeScript frontend for an SME financing product from scratch, including multi-step applications, state management and review workflows. The product received 273 applications and UZS 21B in approved limits within two weeks of launch.</li><li>Developed and published an internal MCP server for a private UI library, exposing component search, listings and details to AI development tools.</li><li>Raised Lighthouse performance from 54 to 74 and accessibility from 66 to 87; introduced Lighthouse CI quality gates and optimized image delivery, lazy loading and code splitting.</li><li>Implemented E-IMZO digital signatures, MyID and KATM integrations, multi-limit business logic and WebSocket dashboards; contributed across nine product teams.</li></ul>
+<h2>TECHNICAL SKILLS</h2><p><strong>AI engineering: </strong>LLM APIs, structured outputs, tool calling, MCP, speech-to-text, evaluations</p><p><strong>Backend: </strong>Go, chi, pgx/sqlc, PostgreSQL, Redis, Asynq, REST APIs, OAuth, JWT</p><p><strong>Frontend: </strong>TypeScript, Vue 3, Nuxt, Pinia, Tailwind CSS, Vite, Telegram Mini Apps</p><p><strong>Delivery and testing: </strong>Docker, Nginx, GitHub Actions, Sentry, Go tests, Vitest, Vue Test Utils</p>
+<h2>EDUCATION AND LANGUAGES</h2><p>BSc in Information Technology, Amity University, 2020 - 2024</p><p>Uzbek and Russian: native. English: professional working proficiency.</p></body></html>
