@@ -4,12 +4,24 @@
   "location": "Tashkent, Uzbekistan",
   "email": "shohchik9999@gmail.com",
   "links": [
-    ["Portfolio", "https://ganiev-portfolio.pages.dev/en"],
-    ["GitHub", "https://github.com/ShokhruhbekGaniev"],
-    ["LinkedIn", "https://linkedin.com/in/shokhrukhbek-ganiev"],
-    ["Telegram", "https://t.me/sh_ganiev"]
+    [
+      "Portfolio",
+      "https://ganiev-portfolio.pages.dev/en"
+    ],
+    [
+      "GitHub",
+      "https://github.com/ShokhruhbekGaniev"
+    ],
+    [
+      "LinkedIn",
+      "https://linkedin.com/in/shokhrukhbek-ganiev"
+    ],
+    [
+      "Telegram",
+      "https://t.me/sh_ganiev"
+    ]
   ],
-  "summary": "Full-stack engineer building AI-powered products with Go, TypeScript and Vue/Nuxt. Commercial fintech frontend experience since November 2023. Creator of Hamyonimda, a deployed personal finance product spanning voice input, LLM extraction, payments and infrastructure. Builds tool-using assistants and evaluates their correctness, latency and cost.",
+  "summary": "Full-stack engineer building AI-powered products with Go, TypeScript and Vue/Nuxt. Commercial fintech experience since November 2023; currently a Full-Stack Developer at Alif. Creator of Hamyonimda, a deployed personal finance product spanning voice input, LLM extraction, payments and infrastructure. Builds tool-using assistants and evaluates their correctness, latency and cost.",
   "product": {
     "name": "Hamyonimda",
     "role": "Creator and Full-Stack Developer",
@@ -26,10 +38,11 @@
   },
   "experience": {
     "company": "Alif",
-    "role": "Frontend Developer",
+    "role": "Full-Stack Developer",
     "context": "Fintech, Tashkent",
     "period": "Nov 2023 - Present",
     "bullets": [
+      "Expanded from frontend to full-stack responsibilities in July 2026. Built Go/Gin APIs, PostgreSQL persistence and tests for vehicle-service workflows, including MyGov integrations and NAPP insurance transaction callbacks.",
       "Built the Vue 3/TypeScript frontend for an SME financing product from scratch, including multi-step applications, state management and review workflows. The product received 273 applications and UZS 21B in approved limits within two weeks of launch.",
       "Developed and published an internal MCP server for a private UI library, exposing component search, listings and details to AI development tools.",
       "Raised Lighthouse performance from 54 to 74 and accessibility from 66 to 87; introduced Lighthouse CI quality gates and optimized image delivery, lazy loading and code splitting.",
@@ -37,10 +50,22 @@
     ]
   },
   "skills": [
-    ["AI engineering", "LLM APIs, structured outputs, tool calling, MCP, speech-to-text, evaluations"],
-    ["Backend", "Go, chi, pgx/sqlc, PostgreSQL, Redis, Asynq, REST APIs, OAuth, JWT"],
-    ["Frontend", "TypeScript, Vue 3, Nuxt, Pinia, Tailwind CSS, Vite, Telegram Mini Apps"],
-    ["Delivery and testing", "Docker, Nginx, GitHub Actions, Sentry, Go tests, Vitest, Vue Test Utils"]
+    [
+      "AI engineering",
+      "LLM APIs, structured outputs, tool calling, MCP, speech-to-text, evaluations"
+    ],
+    [
+      "Backend",
+      "Go, Gin, Uber Fx, chi, pgx/sqlc, PostgreSQL, Redis, Asynq, REST APIs, OAuth, JWT"
+    ],
+    [
+      "Frontend",
+      "TypeScript, Vue 3, Nuxt, Pinia, Tailwind CSS, Vite, Telegram Mini Apps"
+    ],
+    [
+      "Delivery and testing",
+      "Docker, Nginx, GitHub Actions, Sentry, Go tests, Vitest, Vue Test Utils"
+    ]
   ],
   "education": "BSc in Information Technology, Amity University, 2020 - 2024",
   "languages": "Uzbek and Russian: native. English: professional working proficiency."
