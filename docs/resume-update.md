@@ -30,3 +30,9 @@ The 25/38 to 35/38 result is an evaluation of 38 examples, not a production accu
 - THE LOOP could not complete automated video critique: its MCP vision provider is not configured. Browser screenshots and reduced-motion checks were completed separately.
 
 Production is unchanged until the owner authorizes the specific push and deployment.
+
+## Update — 2026-11-17
+
+Owner requested publishing the revised CV and site. Positioning is Full-Stack Developer with AI integrations, not a model-training role. Added daily Claude Code/Codex and AI-agent workflows, window-tinting permits with MyGov, November 2023 frontend start and July 2026 Go responsibilities. Removed internal Alif figures and unsupported incident/uptime/latency claims. Existing Hamyonimda evaluation is explicitly scoped to 38 examples.
+
+Validation: Nuxt static generation (11 routes) and git diff whitespace checks pass. PDF renders as a legible single page; updated Word is generated from the same JSON. Desktop and 390px mobile browser visual checks pass; no horizontal overflow or browser console errors observed. No automated tests/lint are configured. Nuxt typecheck is blocked by the repository's missing root tsconfig.json, not reported as passed.

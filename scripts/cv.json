@@ -1,6 +1,6 @@
 {
   "name": "Shokhrukhbek Ganiev",
-  "title": "Full-Stack AI Engineer",
+  "title": "Full-Stack Developer | Go, TypeScript, Vue/Nuxt | AI Integrations",
   "location": "Tashkent, Uzbekistan",
   "email": "shohchik9999@gmail.com",
   "links": [
@@ -21,19 +21,18 @@
       "https://t.me/sh_ganiev"
     ]
   ],
-  "summary": "Full-stack engineer building AI-powered products with Go, TypeScript and Vue/Nuxt. Commercial fintech experience since November 2023; currently a Full-Stack Developer at Alif. Creator of Hamyonimda, a deployed personal finance product spanning voice input, LLM extraction, payments and infrastructure. Builds tool-using assistants and evaluates their correctness, latency and cost.",
+  "summary": "Full-stack developer with commercial fintech experience since November 2023: frontend development in Vue/TypeScript, with Go backend responsibilities since July 2026. Creator of Hamyonimda. I actively use Claude Code, Codex and AI agents for research, planning, implementation, testing and change review, and follow new AI tools to adopt useful capabilities in my workflow.",
   "product": {
     "name": "Hamyonimda",
     "role": "Creator and Full-Stack Developer",
-    "period": "2026 - Present",
+    "period": "May 2026 - Present",
     "url": "https://hamyonimda.uz",
     "description": "Independent product: AI-powered personal finance for Uzbekistan, delivered through a Telegram bot, Mini App and web dashboard.",
     "bullets": [
-      "Built and deployed the product from scratch: Go REST APIs, Vue/Nuxt interfaces, PostgreSQL, Redis/Asynq workers, payment integrations and Docker-based CI/CD on a self-managed VPS.",
-      "Developed voice and bank-SMS intake with speech-to-text and structured LLM outputs. Added language-aware retries, provider fallback and partial-input recovery for Uzbek/Russian financial commands.",
-      "Improved amount extraction from 25/38 to 35/38 correct cases (66% to 92%) on a 38-example evaluation set by comparing speech-recognition and LLM parsing configurations.",
-      "Developed Hami, a Go-based financial assistant with tool calling, server-scoped user access, deterministic monetary calculations and numerical-answer verification against tool results.",
-      "Built multilingual evaluations for tool selection, numerical correctness, refusals and prompt injection, tracking latency and model cost; implemented an MCP server with OAuth and PKCE."
+      "Built a personal finance product with Go REST APIs, Vue/Nuxt interfaces, PostgreSQL, Redis/Asynq, payment integrations, Docker and CI/CD.",
+      "Implemented voice and bank-SMS intake using speech-to-text and structured LLM outputs for Uzbek and Russian financial commands.",
+      "Developed hami, a financial AI assistant with tool calling, user-scoped data access, monetary calculations in code and confirmation before recording transactions.",
+      "Built multilingual evaluations for tool selection, numerical correctness and prompt injection, considering latency and cost; implemented an MCP server with OAuth and PKCE."
     ]
   },
   "experience": {
@@ -42,29 +41,33 @@
     "context": "Fintech, Tashkent",
     "period": "Nov 2023 - Present",
     "bullets": [
-      "Expanded from frontend to full-stack responsibilities in July 2026. Built Go/Gin APIs, PostgreSQL persistence and tests for vehicle-service workflows, including MyGov integrations and NAPP insurance transaction callbacks.",
-      "Built the Vue 3/TypeScript frontend for an SME financing product from scratch, including multi-step applications, state management and review workflows. The product received 273 applications and UZS 21B in approved limits within two weeks of launch.",
-      "Developed and published an internal MCP server for a private UI library, exposing component search, listings and details to AI development tools.",
-      "Raised Lighthouse performance from 54 to 74 and accessibility from 66 to 87; introduced Lighthouse CI quality gates and optimized image delivery, lazy loading and code splitting.",
-      "Implemented E-IMZO digital signatures, MyID and KATM integrations, multi-limit business logic and WebSocket dashboards; contributed across nine product teams."
+      "Frontend development since November 2023; expanded into Go backend work in July 2026. Built Go/Gin APIs, PostgreSQL persistence and tests for Alif Auto, including MyGov integrations and NAPP insurance callbacks.",
+      "Independently implemented frontend and backend for the vehicle window-tinting permit workflow: MyGov integration, application creation and recovery, invoice retrieval and status handling. Investigated external API errors using OpenSearch logs.",
+      "Built the Vue 3/TypeScript frontend of an SME financing product from scratch, with multi-step applications, state management and review workflows.",
+      "Created an internal MCP server for a UI library, exposing component search and documentation to AI development tools.",
+      "Improved performance and accessibility with Lighthouse CI, image optimization, lazy loading and code splitting. Worked with E-IMZO, MyID, KATM and WebSocket dashboards."
     ]
   },
   "skills": [
     [
-      "AI engineering",
-      "LLM APIs, structured outputs, tool calling, MCP, speech-to-text, evaluations"
+      "AI integrations",
+      "LLM APIs, speech-to-text, structured outputs, tool calling, MCP, evaluations"
+    ],
+    [
+      "AI-assisted development",
+      "Claude Code, Codex, AI agents; research, implementation, testing and review"
     ],
     [
       "Backend",
-      "Go, Gin, Uber Fx, chi, pgx/sqlc, PostgreSQL, Redis, Asynq, REST APIs, OAuth, JWT"
+      "Go, Gin, PostgreSQL, Redis, Asynq, REST APIs, WebSocket, OAuth/PKCE"
     ],
     [
       "Frontend",
-      "TypeScript, Vue 3, Nuxt, Pinia, Tailwind CSS, Vite, Telegram Mini Apps"
+      "TypeScript, JavaScript, Vue 3, Nuxt, Pinia, Vite"
     ],
     [
-      "Delivery and testing",
-      "Docker, Nginx, GitHub Actions, Sentry, Go tests, Vitest, Vue Test Utils"
+      "Tools",
+      "Git, Docker, Linux, GitHub Actions, CI/CD, OpenSearch"
     ]
   ],
   "education": "BSc in Information Technology, Amity University, 2020 - 2024",

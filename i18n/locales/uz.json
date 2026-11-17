@@ -7,8 +7,8 @@
     "contact": "Aloqa"
   },
   "hero": {
-    "label": "Full-Stack AI Engineer · Toshkent",
-    "tagline": "AI mahsulotlarini interfeysdan infratuzilmagacha yarataman. Go, TypeScript va Vue/Nuxt — ovozli jarayonlar, vositalardan foydalanuvchi AI yordamchilar va sifatni baholash.",
+    "label": "Full-Stack Developer · AI integratsiyalari · Toshkent",
+    "tagline": "Go, TypeScript va Vue/Nuxt asosida mahsulotlar yarataman: ovozli kiritish, LLM API va vositalardan foydalanuvchi AI yordamchilar. Kundalik dasturlashda Claude Code, Codex va AI agentlardan faol foydalanaman.",
     "ctaPrimary": "CV yuklash · PDF",
     "ctaSecondary": "Hamyonimda loyihasi",
     "open": "Takliflarga ochiqman",
@@ -16,9 +16,9 @@
   },
   "about": {
     "label": "01 / Men haqimda",
-    "line1": "AI mahsulotini boshidan oxirigacha.",
-    "line2": "2023-yil noyabridan fintech interfeyslarini ishlab chiqaman: SME mahsuloti frontendini noldan yaratish, elektron imzo integratsiyasi, unumdorlikni yaxshilash va AI dasturlash vositalari uchun ichki MCP server.",
-    "line3": "Hamyonimda mahsulotini ham noldan yaratdim: Go backend, Vue/Nuxt interfeyslari, ovozli kiritish, bank SMS tahlili, to‘lovlar va infratuzilma. AI qismida modellarni taqqoslash, xatolardan tiklanish va ko‘p tilli sifat tekshiruvlari bilan ishlayman.",
+    "line1": "Full-stack dasturlash va amaliy AI.",
+    "line2": "2023-yil noyabridan Vue/TypeScript bilan fintech interfeyslarini, 2026-yil iyulidan esa Go backend vazifalarini ham ishlab chiqaman. MyGov orqali avtomobil oynalarini qoraytirish ruxsatnomasi uchun frontend va backendni mustaqil yaratdim: arizalar, tiklash, hisob olish va holatlarni boshqarish.",
+    "line3": "Hamyonimda mahsulotini yaratdim: ovozli kiritish va foydalanuvchi ma’lumotlari asosida javob beradigan, operatsiyalarni tasdiq bilan yozadigan hami AI yordamchisi. Tadqiqot, rejalashtirish, kod yozish, test va o‘zgarishlarni tahlil qilishda AI agentlardan foydalanaman. Yangi vositalarni kuzatib, foydali imkoniyatlarni ish jarayoniga qo‘shaman.",
     "stats": [
       {
         "value": 2023,
@@ -61,7 +61,7 @@
       },
       {
         "title": "Amaliy AI",
-        "body": "Nutqni tanish, tuzilmali ma’lumot ajratish, AI yordamchilar va MCP. Modellarni sifat, tezlik va xarajat bo‘yicha baholash.",
+        "body": "Nutqni matnga aylantirish, strukturali ma’lumot ajratish, tool calling va MCP. Aniqlik, kechikish va xarajatlarni baholayman. Kundalik dasturlashda Claude Code va Codexdan foydalanaman.",
         "tags": [
           "LLM APIs",
           "MCP",
@@ -121,7 +121,7 @@
     "hint": "{help} yozib Enter bosing",
     "welcome": "Salom! Bu interaktiv terminal. `help` yozing — nima qila olishimni ko‘rsataman.",
     "help": "Mavjud buyruqlar:\n  about      — men kimman\n  services   — nima qilaman\n  projects   — ishlarim\n  contact    — bog‘lanish\n  lang ru / uz / en — tilni almashtirish\n  theme      — mavzuni almashtirish\n  clear      — ekranni tozalash",
-    "about": "Shokhrukhbek Ganiev. Toshkentlik Full-Stack AI Engineer. 2023-yil noyabridan fintech frontend tajribasi; Hamyonimda yaratuvchisi. Go, TypeScript, Vue/Nuxt va amaliy AI.",
+    "about": "Full-Stack Developer · AI integratsiyalari · Toshkent. 2023-yil noyabridan Vue/TypeScript bilan fintech interfeyslarini, 2026-yil iyulidan esa Go backend vazifalarini ham ishlab chiqaman. MyGov orqali avtomobil oynalarini qoraytirish ruxsatnomasi uchun frontend va backendni mustaqil yaratdim: arizalar, tiklash, hisob olish va holatlarni boshqarish.",
     "services": "Mahsulot interfeyslari, Go API va ma’lumotlar, LLM integratsiyalari, vositali AI yordamchilar, MCP, sifat baholash va ekspluatatsiya.",
     "projects": "hamyonimda.uz — shaxsiy moliya: ovoz/SMS, Go backend, Vue/Nuxt va AI yordamchi ishlab chiqish\nskale.uz — marketing agentligi sayti\nglobalfides.com — tibbiy turizm",
     "contact": "Telegram: t.me/sh_ganiev\nEmail: shohchik9999{'@'}gmail.com\nGitHub: github.com/ShokhruhbekGaniev",
@@ -155,7 +155,7 @@
     "hint": "buyruqlar uchun"
   },
   "meta": {
-    "title": "Shokhrukhbek Ganiev — Full-Stack AI Engineer",
-    "description": "Toshkentlik Full-Stack AI Engineer. Hamyonimda yaratuvchisi. Go, TypeScript, Vue/Nuxt, ovozli AI, LLM vositalari, MCP va sifat baholash."
+    "title": "Shokhrukhbek Ganiev — Full-Stack Developer · AI",
+    "description": "Go, TypeScript va Vue/Nuxt asosida mahsulotlar yarataman: ovozli kiritish, LLM API va vositalardan foydalanuvchi AI yordamchilar. Kundalik dasturlashda Claude Code, Codex va AI agentlardan faol foydalanaman."
   }
 }

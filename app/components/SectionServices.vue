@@ -152,7 +152,7 @@ onUnmounted(() => ctx?.revert())
           <div class="demo-api relative h-44 border-b border-line p-4" aria-hidden="true">
             <div class="flex h-full flex-col justify-center gap-2 overflow-hidden rounded-lg border border-line px-4 font-mono text-[11px] leading-relaxed" style="background: var(--ink-2)">
               <div class="api-line overflow-hidden whitespace-nowrap opacity-0"><span class="text-lime">❯</span> <span class="text-body">curl api.shop.uz/orders</span></div>
-              <div class="api-line overflow-hidden whitespace-nowrap opacity-0"><span class="text-lime">200 OK</span> <span class="text-muted">· 12ms</span></div>
+              <div class="api-line overflow-hidden whitespace-nowrap opacity-0"><span class="text-lime">200 OK</span> <span class="text-muted">· demo</span></div>
               <div class="api-line overflow-hidden whitespace-nowrap text-muted opacity-0">{ "orders": [...], "total": <span class="text-lime">142</span> }</div>
               <div class="api-line overflow-hidden whitespace-nowrap text-muted opacity-0">→ PostgreSQL · JWT ✓ · webhook sent</div>
             </div>
@@ -212,7 +212,7 @@ onUnmounted(() => ctx?.revert())
               </div>
               <div class="dep-status mt-1 inline-flex items-center gap-2 self-start rounded-full bg-lime-dim px-3 py-1 text-[10px] text-lime">
                 <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-lime" />
-                online · uptime 99.9%
+                demo · illustrative response
               </div>
             </div>
           </div>

@@ -7,8 +7,8 @@
     "contact": "Contact"
   },
   "hero": {
-    "label": "Full-Stack AI Engineer · Tashkent",
-    "tagline": "I build AI products from interface to infrastructure. Go, TypeScript and Vue/Nuxt — with hands-on work on voice pipelines, tool-using assistants and evaluations.",
+    "label": "Full-Stack Developer · AI Integrations · Tashkent",
+    "tagline": "I build products with Go, TypeScript and Vue/Nuxt, integrating voice input, LLM APIs and tool-using assistants. I actively use Claude Code, Codex and AI agents throughout development.",
     "ctaPrimary": "Download CV · PDF",
     "ctaSecondary": "Explore Hamyonimda",
     "open": "Open to opportunities",
@@ -16,9 +16,9 @@
   },
   "about": {
     "label": "01 / About",
-    "line1": "AI products, built end to end.",
-    "line2": "Since November 2023, I have built fintech interfaces with complex business logic: an SME financing frontend from scratch, digital-signature integrations, performance improvements and an internal MCP server for AI development tools.",
-    "line3": "I also created Hamyonimda from scratch: a personal finance product with a Go backend, Vue/Nuxt interfaces, voice and SMS intake, payments and deployment infrastructure. My AI work includes model comparisons, failure recovery and multilingual evaluations.",
+    "line1": "Full-stack development with practical AI.",
+    "line2": "Since November 2023, I have built fintech interfaces in Vue/TypeScript; since July 2026, I also work on Go backends. I independently implemented frontend and backend for a vehicle window-tinting permit workflow with MyGov: applications, recovery, invoices and statuses.",
+    "line3": "I created Hamyonimda: a personal finance product with voice input and hami, an AI assistant that answers questions using user data and records transactions with confirmation. I use AI agents for research, planning, implementation, testing and review, following new tools and adopting useful capabilities.",
     "stats": [
       {
         "value": 2023,
@@ -61,7 +61,7 @@
       },
       {
         "title": "Applied AI",
-        "body": "Speech-to-text, structured extraction, tool-using assistants and MCP. Model choices tested against correctness, latency and cost.",
+        "body": "Speech-to-text, structured extraction, tool calling and MCP, evaluated for correctness, latency and cost. Daily AI-assisted development with Claude Code and Codex.",
         "tags": [
           "LLM APIs",
           "MCP",
@@ -121,7 +121,7 @@
     "hint": "Type {help} and press Enter",
     "welcome": "Hi! This is an interactive terminal. Type `help` to see what I can do.",
     "help": "Available commands:\n  about      — who I am\n  services   — what I do\n  projects   — my work\n  contact    — how to reach me\n  lang ru / uz / en — switch language\n  theme      — toggle theme\n  clear      — clear screen",
-    "about": "Shokhrukhbek Ganiev. Full-Stack AI Engineer in Tashkent. Commercial fintech frontend work since November 2023; creator of Hamyonimda. Go, TypeScript, Vue/Nuxt and applied AI.",
+    "about": "Full-Stack Developer · AI Integrations · Tashkent. Since November 2023, I have built fintech interfaces in Vue/TypeScript; since July 2026, I also work on Go backends. I independently implemented frontend and backend for a vehicle window-tinting permit workflow with MyGov: applications, recovery, invoices and statuses.",
     "services": "Product interfaces, Go APIs and data, LLM integrations, tool-using assistants, MCP, evaluations and production delivery.",
     "projects": "hamyonimda.uz — personal finance: voice/SMS intake, Go backend, Vue/Nuxt and AI assistant development\nskale.uz — marketing agency site\nglobalfides.com — medical tourism platform",
     "contact": "Telegram: t.me/sh_ganiev\nEmail: shohchik9999{'@'}gmail.com\nGitHub: github.com/ShokhruhbekGaniev",
@@ -155,7 +155,7 @@
     "hint": "for commands"
   },
   "meta": {
-    "title": "Shokhrukhbek Ganiev — Full-Stack AI Engineer",
-    "description": "Full-Stack AI Engineer in Tashkent. Creator of Hamyonimda. Go, TypeScript, Vue/Nuxt, voice AI, LLM tool calling, MCP and evaluations."
+    "title": "Shokhrukhbek Ganiev — Full-Stack Developer · AI",
+    "description": "I build products with Go, TypeScript and Vue/Nuxt, integrating voice input, LLM APIs and tool-using assistants. I actively use Claude Code, Codex and AI agents throughout development."
   }
 }

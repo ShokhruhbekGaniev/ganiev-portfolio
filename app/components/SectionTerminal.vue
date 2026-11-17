@@ -66,7 +66,7 @@ function run() {
       print('about/  services/  work/  contact/  secrets/ 🔒')
       break
     case 'uptime':
-      print('3+ years in production, 0 critical incidents')
+      print('Commercial fintech development since November 2023')
       break
     default:
       print(t('terminal.notFound'))
