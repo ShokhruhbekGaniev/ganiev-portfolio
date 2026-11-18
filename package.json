@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "npx serve .output/public"
   },
   "keywords": [],
   "author": "",

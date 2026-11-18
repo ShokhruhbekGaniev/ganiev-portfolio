@@ -1,0 +1,48 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# one deploy at a time; a newer push waits instead of cancelling a deploy in flight
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm generate
+
+      - name: Check the build has the real page, not an empty shell
+        run: |
+          for f in index.html uz/index.html en/index.html; do
+            grep -q 'family=Unbounded' ".output/public/$f" || { echo "::error::$f is missing the site fonts"; exit 1; }
+            grep -q 'Shokhrukhbek_Ganiev_CV.pdf' ".output/public/$f" || { echo "::error::$f is missing the CV link"; exit 1; }
+          done
+
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy .output/public --project-name=ganiev-portfolio --branch=main --commit-hash=${{ github.sha }}
