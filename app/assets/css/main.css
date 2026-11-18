@@ -64,9 +64,11 @@ html.light {
   --color-chrome-yellow: var(--chrome-yellow);
   --color-chrome-green: var(--chrome-green);
 
-  --font-display: 'Clash Display', 'Space Grotesk', sans-serif;
-  --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  /* Unbounded + Onest (2026-11-19): both cover Cyrillic and Uzbek Latin (oʻ gʻ); Clash Display and
+     Space Grotesk had no Cyrillic, so every Russian line rendered in Helvetica / the system face */
+  --font-display: 'Unbounded', 'Onest', sans-serif;
+  --font-sans: 'Onest', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Onest', ui-monospace, monospace; /* JetBrains Mono has no ʻ (U+02BB): Uzbek oʻ gʻ take it from Onest */
 }
 
 /* ---------------------------------- */
@@ -179,7 +181,8 @@ body {
   font-family: var(--font-display);
   font-weight: 600;
   line-height: 0.92;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em; /* Unbounded: tighter tracking makes B–E and I–E collide (review 2026-11-19) */
+  text-wrap: balance; /* headings break at the phrase, not one word per line at 375 */
 }
 
 /* hide content until GSAP takes over — only when JS is on and motion allowed */

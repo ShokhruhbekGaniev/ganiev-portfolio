@@ -1,7 +1,7 @@
 {
   "nav": {
     "about": "Men haqimda",
-    "services": "Yo‘nalishlar",
+    "services": "Yoʻnalishlar",
     "work": "Ishlar",
     "terminal": "Terminal",
     "contact": "Aloqa",
@@ -19,7 +19,7 @@
     "label": "01 / Men haqimda",
     "line1": "Full-stack dasturlash va amaliy AI.",
     "line2": "2023-yil noyabridan Vue/TypeScript bilan fintech interfeyslarini, 2026-yil iyulidan esa Go backend vazifalarini ham ishlab chiqaman. MyGov orqali avtomobil oynalarini qoraytirish ruxsatnomasi uchun frontend va backendni mustaqil yaratdim: arizalar, tiklash, hisob olish va holatlarni boshqarish.",
-    "line3": "Hamyonimda mahsulotini yaratdim: ovozli kiritish va foydalanuvchi ma’lumotlari asosida javob beradigan, operatsiyalarni tasdiq bilan yozadigan hami AI yordamchisi. Tadqiqot, rejalashtirish, kod yozish, test va o‘zgarishlarni tahlil qilishda AI agentlardan foydalanaman. Yangi vositalarni kuzatib, foydali imkoniyatlarni ish jarayoniga qo‘shaman.",
+    "line3": "Hamyonimda mahsulotini yaratdim: ovozli kiritish va foydalanuvchi maʼlumotlari asosida javob beradigan, operatsiyalarni tasdiq bilan yozadigan hami AI yordamchisi. Tadqiqot, rejalashtirish, kod yozish, test va oʻzgarishlarni tahlil qilishda AI agentlardan foydalanaman. Yangi vositalarni kuzatib, foydali imkoniyatlarni ish jarayoniga qoʻshaman.",
     "stats": [
       {
         "value": 2023,
@@ -34,17 +34,17 @@
       {
         "value": 3,
         "suffix": "",
-        "label": "mahsulot tili: o‘zbek, rus va ingliz"
+        "label": "mahsulot tili: oʻzbek, rus va ingliz"
       }
     ]
   },
   "services": {
-    "label": "02 / Yo‘nalishlar",
+    "label": "02 / Yoʻnalishlar",
     "title": "Interfeysdan AI tizimigacha.",
     "items": [
       {
         "title": "Mahsulot interfeyslari",
-        "body": "Murakkab holat boshqaruvi va moliyaviy jarayonlar uchun Vue va Nuxt ilovalari. Unumdorlik va foydalanish qulayligiga e’tibor.",
+        "body": "Murakkab holat boshqaruvi va moliyaviy jarayonlar uchun Vue va Nuxt ilovalari. Unumdorlik va foydalanish qulayligiga eʼtibor.",
         "tags": [
           "Vue / Nuxt",
           "TypeScript",
@@ -52,8 +52,8 @@
         ]
       },
       {
-        "title": "Backend va ma’lumotlar",
-        "body": "Go API, PostgreSQL, fon vazifalari, to‘lov integratsiyalari va pul operatsiyalarining tranzaksion mantig‘i.",
+        "title": "Backend va maʼlumotlar",
+        "body": "Go API, PostgreSQL, fon vazifalari, toʻlov integratsiyalari va pul operatsiyalarining tranzaksion mantigʻi.",
         "tags": [
           "Go",
           "PostgreSQL",
@@ -62,7 +62,7 @@
       },
       {
         "title": "Amaliy AI",
-        "body": "Nutqni matnga aylantirish, strukturali ma’lumot ajratish, tool calling va MCP. Aniqlik, kechikish va xarajatlarni baholayman. Kundalik dasturlashda Claude Code va Codexdan foydalanaman.",
+        "body": "Nutqni matnga aylantirish, strukturali maʼlumot ajratish, tool calling va MCP. Aniqlik, kechikish va xarajatlarni baholayman. Kundalik dasturlashda Claude Code va Codexdan foydalanaman.",
         "tags": [
           "LLM APIs",
           "MCP",
@@ -79,7 +79,7 @@
         ]
       }
     ],
-    "pipelineTitle": "Bu qanday ko‘rinadi",
+    "pipelineTitle": "Bu qanday koʻrinadi",
     "pipeline": [
       "git push",
       "Build",
@@ -100,30 +100,30 @@
     "agency": "Agentlik sayti",
     "platform": "Platforma",
     "projects": {
-      "hamyonimda": "Ovoz, bank SMS va matn moliyaviy yozuvlarga aylanadi. Telegram bot, Mini App va veb kabinet, to‘lov integratsiyalari hamda ko‘p tilli interfeys.",
+      "hamyonimda": "Ovoz, bank SMS va matn moliyaviy yozuvlarga aylanadi. Telegram bot, Mini App va veb kabinet, toʻlov integratsiyalari hamda koʻp tilli interfeys.",
       "skale": "Toshkentdagi marketing-agentlik uchun konversion sayt: hero da 3D shisha, scroll-xoreografiya, statik eksport.",
-      "fides": "O‘zbekistonda tibbiy turizm platformasi: klinikalar, shifokorlar, shaffof narxlar, to‘liq hamrohlik."
+      "fides": "Oʻzbekistonda tibbiy turizm platformasi: klinikalar, shifokorlar, shaffof narxlar, toʻliq hamrohlik."
     },
     "caseStudy": {
       "eyebrow": "Asosiy mahsulot · Noldan yaratilgan",
       "intro": "Shaxsiy moliya ovozingizdan boshlanadi.",
-      "ownership": "Frontend, backend, AI integratsiyalari va deploy infratuzilmasini loyihaladim va yaratdim. Telegramdagi jarayondan ma’lumotlar bazasi va mahsulotni ishlatishgacha.",
+      "ownership": "Frontend, backend, AI integratsiyalari va deploy infratuzilmasini loyihaladim va yaratdim. Telegramdagi jarayondan maʼlumotlar bazasi va mahsulotni ishlatishgacha.",
       "visit": "Hamyonimda saytini ochish",
       "productTitle": "Ishlayotgan mahsulot",
-      "productBody": "Ovoz, bank SMS va matn moliyaviy yozuvlarga aylanadi. Telegram bot, Mini App va veb kabinet, to‘lov integratsiyalari hamda ko‘p tilli interfeys.",
+      "productBody": "Ovoz, bank SMS va matn moliyaviy yozuvlarga aylanadi. Telegram bot, Mini App va veb kabinet, toʻlov integratsiyalari hamda koʻp tilli interfeys.",
       "aiTitle": "Model atrofidagi muhandislik",
-      "aiBody": "Tilga mos qayta tanish va zaxira provayder. Hami ishlab chiqilishida vosita chaqiruvlari, Go orqali hisoblash va raqamlarni natijalar bilan tekshirish ko‘p tilli sinovlar bilan birga qo‘llanadi.",
-      "evaluation": "38 ta misoldan iborat sinovda pipeline va modellar o‘zgartirilgach to‘g‘ri ajratilgan summalar (66% → 92%). Bu aniq tajriba natijasi, butun mahsulot aniqligi emas."
+      "aiBody": "Tilga mos qayta tanish va zaxira provayder. Hami ishlab chiqilishida vosita chaqiruvlari, Go orqali hisoblash va raqamlarni natijalar bilan tekshirish koʻp tilli sinovlar bilan birga qoʻllanadi.",
+      "evaluation": "38 ta misoldan iborat sinovda pipeline va modellar oʻzgartirilgach toʻgʻri ajratilgan summalar (66% → 92%). Bu aniq tajriba natijasi, butun mahsulot aniqligi emas."
     }
   },
   "terminal": {
     "label": "04 / Terminal",
     "title": "Sayt bilan gaplash.",
     "hint": "{help} yozib Enter bosing",
-    "welcome": "Salom! Bu interaktiv terminal. `help` yozing — nima qila olishimni ko‘rsataman.",
-    "help": "Mavjud buyruqlar:\n  about      — men kimman\n  services   — nima qilaman\n  projects   — ishlarim\n  contact    — bog‘lanish\n  lang ru / uz / en — tilni almashtirish\n  theme      — mavzuni almashtirish\n  clear      — ekranni tozalash",
+    "welcome": "Salom! Bu interaktiv terminal. `help` yozing — nima qila olishimni koʻrsataman.",
+    "help": "Mavjud buyruqlar:\n  about      — men kimman\n  services   — nima qilaman\n  projects   — ishlarim\n  contact    — bogʻlanish\n  lang ru / uz / en — tilni almashtirish\n  theme      — mavzuni almashtirish\n  clear      — ekranni tozalash",
     "about": "Full-Stack Developer · AI integratsiyalari · Toshkent. 2023-yil noyabridan Vue/TypeScript bilan fintech interfeyslarini, 2026-yil iyulidan esa Go backend vazifalarini ham ishlab chiqaman. MyGov orqali avtomobil oynalarini qoraytirish ruxsatnomasi uchun frontend va backendni mustaqil yaratdim: arizalar, tiklash, hisob olish va holatlarni boshqarish.",
-    "services": "Mahsulot interfeyslari, Go API va ma’lumotlar, LLM integratsiyalari, vositali AI yordamchilar, MCP, sifat baholash va ekspluatatsiya.",
+    "services": "Mahsulot interfeyslari, Go API va maʼlumotlar, LLM integratsiyalari, vositali AI yordamchilar, MCP, sifat baholash va ekspluatatsiya.",
     "projects": "hamyonimda.uz — shaxsiy moliya: ovoz/SMS, Go backend, Vue/Nuxt va AI yordamchi ishlab chiqish\nskale.uz — marketing agentligi sayti\nglobalfides.com — tibbiy turizm",
     "contact": "Telegram: t.me/sh_ganiev\nEmail: shohchik9999{'@'}gmail.com\nGitHub: github.com/ShokhruhbekGaniev",
     "langChanged": "Til almashtirildi.",
@@ -136,20 +136,20 @@
     "label": "05 / Aloqa",
     "title": "Vazifa bormi? Keling {accent}.",
     "titleAccent": "qilamiz",
-    "subtitle": "Full-stack yoki AI muhandis izlayapsizmi? Mahsulot va jamoangiz hal qilishi kerak bo‘lgan vazifa haqida yozing.",
+    "subtitle": "Full-stack yoki AI muhandis izlayapsizmi? Mahsulot va jamoangiz hal qilishi kerak boʻlgan vazifa haqida yozing.",
     "cta": "Telegramda yozish",
     "or": "yoki",
     "downloadCv": "CV · PDF",
-    "footerBuilt": "Toshkent, O‘zbekiston · Nuxt + GSAP da yaratilgan",
+    "footerBuilt": "Toshkent, Oʻzbekiston · Nuxt + GSAP da yaratilgan",
     "downloadWord": "CV · Word"
   },
   "palette": {
-    "placeholder": "Buyruq yoki bo‘lim…",
+    "placeholder": "Buyruq yoki boʻlim…",
     "navigate": "Navigatsiya",
     "actions": "Amallar",
     "theme": "Mavzuni almashtirish",
     "langRu": "Til: Русский",
-    "langUz": "Til: O‘zbekcha",
+    "langUz": "Til: Oʻzbekcha",
     "langEn": "Til: English",
     "telegram": "Telegramda yozish",
     "github": "GitHub ni ochish",
@@ -161,6 +161,6 @@
     "description": "Go, TypeScript va Vue/Nuxt asosida mahsulotlar yarataman: ovozli kiritish, LLM API va vositalardan foydalanuvchi AI yordamchilar. Kundalik dasturlashda Claude Code, Codex va AI agentlardan faol foydalanaman."
   },
   "a11y": {
-    "skip": "Asosiy qismga o'tish"
+    "skip": "Asosiy qismga oʻtish"
   }
 }

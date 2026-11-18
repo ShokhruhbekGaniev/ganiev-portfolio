@@ -68,7 +68,7 @@ onUnmounted(() => ctx?.revert())
       <i18n-t
         keypath="contact.title"
         tag="h2"
-        class="contact-title display max-w-5xl text-5xl gs-reveal md:text-8xl"
+        class="contact-title display max-w-5xl text-3xl gs-reveal sm:text-5xl md:text-8xl"
       >
         <template #accent>
           <span class="text-lime">{{ t('contact.titleAccent') }}</span>

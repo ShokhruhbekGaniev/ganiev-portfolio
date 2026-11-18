@@ -53,7 +53,7 @@ onUnmounted(() => ctx?.revert())
       <p class="hero-meta label-mono mb-6 gs-reveal">{{ t('hero.label') }}</p>
 
       <h1
-        class="display text-[clamp(2rem,10vw,8.6rem)] leading-[0.9] tracking-[-0.03em]"
+        class="display text-[clamp(2rem,7.8vw,7rem)] leading-[0.9] tracking-[-0.01em]"
         style="font-kerning: none; text-rendering: optimizeSpeed"
       >
         <span class="hero-name-first block whitespace-nowrap gs-reveal">SHOKHRUKHBEK</span>

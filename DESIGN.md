@@ -23,8 +23,8 @@ colors:
   chrome-yellow: "#febc2e"
   chrome-green: "#28c840"
 typography:
-  display: { fontFamily: "Clash Display, Space Grotesk, sans-serif", fontWeight: 600, lineHeight: 0.92 }
-  body: { fontFamily: "Space Grotesk, ui-sans-serif, system-ui, sans-serif" }
+  display: { fontFamily: "Unbounded, Onest, sans-serif", fontWeight: 600, lineHeight: 0.92 }
+  body: { fontFamily: "Onest, ui-sans-serif, system-ui, sans-serif" }
   label: { fontFamily: "JetBrains Mono, ui-monospace, monospace", fontSize: "0.75rem" }
 rounded: { focus: "2px", full: "9999px" }
 ---
@@ -36,8 +36,9 @@ rounded: { focus: "2px", full: "9999px" }
 Tokens live in `app/assets/css/main.css` (`:root` dark, `html.light` light) and are mapped to Tailwind in `@theme inline`. Text on a lime fill uses `on-lime`. The light theme's lime is darker (#4f6a00) so lime text and fills pass 4.5:1 on every light surface (fixed 2026-11-18). Translucent tokens (`line`, `lime-dim`, `glow`, `aurora-*`, `dot`) are rgba values in the token file.
 
 ## Typography
-Display: Clash Display 600, tight tracking. Body: Space Grotesk. Labels and the terminal: JetBrains Mono. Text floor: 12px (`text-xs`).
-Open item: Clash Display and Space Grotesk have no Cyrillic — Russian headlines render in Helvetica and Russian body text in the system face (`render_check` `font-fallback`, 2026-11-19). Decide whether to keep that or move to faces with Cyrillic.
+Display: **Unbounded** 600, tracking -0.01em, `text-wrap: balance` (tighter tracking made its notched B, E and I read as touching). Body: **Onest**. Labels and the terminal: JetBrains Mono, with Onest second in the stack for ʻ (U+02BB), which JetBrains Mono lacks. Text floor: 12px (`text-xs`). Hero name: `clamp(2rem, 7.8vw, 7rem)` so "SHOKHRUKHBEK" stays inside the margins from 375 to 1440; contact heading `text-3xl` below sm so it stays on two lines in ru, uz and en.
+Uzbek copy uses ʻ (U+02BB) in oʻ gʻ and ʼ (U+02BC) for tutuq belgisi.
+Every face covers Cyrillic and Uzbek Latin (oʻ gʻ) — owner's choice on 2026-11-19 (option 3 of the font specimen in `design/fonts/`). Before that, Clash Display and Space Grotesk had no Cyrillic and every Russian line rendered in Helvetica or the system face. Keep `render_check` free of `font-fallback` in ru, uz and en.
 
 ## Layout
 Single page, five sections, max width 7xl, 20px phone / 40px desktop margins. Tailwind's spacing scale is the spacing token set.
