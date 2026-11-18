@@ -5,3 +5,9 @@ dist
 .env
 .DS_Store
 *.log
+
+# product-design render artefacts
+design/shots/
+design/before/
+design/before-after/
+design/shots-langs/

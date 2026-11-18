@@ -1,0 +1,55 @@
+{
+  "counts": {
+    "app/app.vue": {
+      "raw-color": 1
+    },
+    "app/assets/css/main.css": {
+      "ai-palette": 2
+    },
+    "app/components/CommandPalette.vue": {
+      "blur": 1,
+      "eyebrow": 1,
+      "raw-font": 2,
+      "raw-spacing": 1,
+      "shadow": 1
+    },
+    "app/components/SectionAbout.vue": {
+      "eyebrow": 1,
+      "raw-line-height": 1
+    },
+    "app/components/SectionContact.vue": {
+      "eyebrow": 5,
+      "raw-color": 1,
+      "shadow": 1
+    },
+    "app/components/SectionHero.vue": {
+      "eyebrow": 4,
+      "raw-color": 1,
+      "raw-font": 1,
+      "raw-line-height": 1
+    },
+    "app/components/SectionProjects.vue": {
+      "eyebrow": 2,
+      "raw-color": 1,
+      "raw-font": 2
+    },
+    "app/components/SectionServices.vue": {
+      "eyebrow": 4,
+      "raw-color": 5,
+      "raw-font": 11
+    },
+    "app/components/SectionTerminal.vue": {
+      "blur": 1,
+      "emoji": 1,
+      "raw-color": 3,
+      "shadow": 1
+    },
+    "app/components/SiteNav.vue": {
+      "blur": 1,
+      "eyebrow": 2,
+      "raw-color": 1,
+      "raw-font": 1
+    }
+  },
+  "version": 1
+}

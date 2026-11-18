@@ -4,7 +4,8 @@
     "services": "Expertise",
     "work": "Work",
     "terminal": "Terminal",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu": "Menu"
   },
   "hero": {
     "label": "Full-Stack Developer · AI Integrations · Tashkent",
@@ -128,7 +129,8 @@
     "langChanged": "Language switched.",
     "themeChanged": "Theme toggled.",
     "notFound": "Command not found. Type `help`.",
-    "sudo": "Nice try. But I'm the only root here :)"
+    "sudo": "Nice try. But I'm the only root here :)",
+    "placeholder": "type help…"
   },
   "contact": {
     "label": "05 / Contact",
@@ -157,5 +159,8 @@
   "meta": {
     "title": "Shokhrukhbek Ganiev — Full-Stack Developer · AI",
     "description": "I build products with Go, TypeScript and Vue/Nuxt, integrating voice input, LLM APIs and tool-using assistants. I actively use Claude Code, Codex and AI agents throughout development."
+  },
+  "a11y": {
+    "skip": "Skip to content"
   }
 }

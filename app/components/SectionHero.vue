@@ -53,7 +53,7 @@ onUnmounted(() => ctx?.revert())
       <p class="hero-meta label-mono mb-6 gs-reveal">{{ t('hero.label') }}</p>
 
       <h1
-        class="display text-[clamp(2rem,10vw,8.6rem)] leading-[0.9] tracking-[-0.03em]"
+        class="display text-[clamp(2rem,7.8vw,7rem)] leading-[0.9] tracking-[-0.01em]"
         style="font-kerning: none; text-rendering: optimizeSpeed"
       >
         <span class="hero-name-first block whitespace-nowrap gs-reveal">SHOKHRUKHBEK</span>
@@ -70,7 +70,7 @@ onUnmounted(() => ctx?.revert())
             href="/Shokhrukhbek_Ganiev_CV.pdf"
             download
             data-magnetic
-            class="inline-flex cursor-pointer items-center gap-2.5 rounded-full bg-lime px-7 py-3.5 font-mono text-sm font-medium uppercase tracking-[0.1em] text-[#0a0b0d] transition-opacity duration-200 hover:opacity-85"
+            class="inline-flex cursor-pointer items-center gap-2.5 rounded-full bg-lime px-7 py-3.5 font-mono text-sm font-medium uppercase tracking-[0.1em] text-on-lime transition-opacity duration-200 hover:opacity-85"
           >
             {{ t('hero.ctaPrimary') }}
             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -101,7 +101,7 @@ onUnmounted(() => ctx?.revert())
       </div>
     </div>
 
-    <p class="hero-scroll-hint absolute bottom-6 left-1/2 -translate-x-1/2 font-mono text-[10px] uppercase tracking-[0.3em] text-muted gs-reveal">
+    <p class="hero-scroll-hint absolute bottom-6 left-1/2 -translate-x-1/2 font-mono text-xs uppercase tracking-[0.3em] text-muted gs-reveal">
       {{ t('hero.scroll') }}
     </p>
   </section>

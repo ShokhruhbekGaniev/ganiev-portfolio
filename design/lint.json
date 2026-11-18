@@ -1,0 +1,67 @@
+{
+  "include": [
+    "app/**/*"
+  ],
+  "exclude": [],
+  "tokenFiles": [
+    "app/assets/css/main.css"
+  ],
+  "allow": [
+    {
+      "rule": "blur",
+      "reason": "modal backdrop: separates the command palette dialog from the page behind it",
+      "files": [
+        "app/components/CommandPalette.vue"
+      ]
+    },
+    {
+      "rule": "shadow",
+      "reason": "elevation of the command palette dialog above the page",
+      "files": [
+        "app/components/CommandPalette.vue"
+      ]
+    },
+    {
+      "rule": "blur",
+      "reason": "fixed header over scrolling content: keeps nav labels legible over any section",
+      "files": [
+        "app/components/SiteNav.vue"
+      ]
+    },
+    {
+      "rule": "ai-palette",
+      "reason": "owner's direction Fintech Noir, chosen 2026-11-19 (DESIGN.md, Do's and Don'ts)"
+    },
+    {
+      "rule": "eyebrow",
+      "reason": "owner's direction Fintech Noir, chosen 2026-11-19 (DESIGN.md, Do's and Don'ts)"
+    },
+    {
+      "rule": "pill-button",
+      "reason": "owner's direction Fintech Noir, chosen 2026-11-19 (DESIGN.md, Do's and Don'ts)"
+    },
+    {
+      "rule": "arrow-label",
+      "reason": "owner's direction Fintech Noir, chosen 2026-11-19 (DESIGN.md, Do's and Don'ts)"
+    },
+    {
+      "rule": "shadow",
+      "reason": "glow on the Telegram CTA and the floating terminal window: owner's direction Fintech Noir, chosen 2026-11-19 (DESIGN.md, Do's and Don'ts)",
+      "files": [
+        "app/components/SectionContact.vue",
+        "app/components/SectionTerminal.vue"
+      ]
+    },
+    {
+      "rule": "blur",
+      "reason": "glass terminal window over the aurora: owner's direction Fintech Noir, chosen 2026-11-19 (DESIGN.md, Do's and Don'ts)",
+      "files": [
+        "app/components/SectionTerminal.vue"
+      ]
+    }
+  ],
+  "allowNamedColors": [
+    "transparent"
+  ],
+  "baseline": "design/lint-baseline.json"
+}

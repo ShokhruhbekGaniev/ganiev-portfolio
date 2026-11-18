@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { gsap, ScrollSmoother } = useGsap()
+const { t } = useI18n()
 
 let smoother: globalThis.ScrollSmoother | null = null
 
@@ -25,13 +26,14 @@ function runMatrix() {
     canvas.width = innerWidth
     canvas.height = innerHeight
     const ctx2d = canvas.getContext('2d')!
+    const lime = getComputedStyle(document.documentElement).getPropertyValue('--lime').trim()
     const cols = Math.floor(innerWidth / 16)
     const drops = Array(cols).fill(0)
     const chars = 'GANIEV01<>/{}=#$'
     const timer = setInterval(() => {
       ctx2d.fillStyle = 'rgba(10, 11, 13, 0.12)'
       ctx2d.fillRect(0, 0, canvas.width, canvas.height)
-      ctx2d.fillStyle = '#c6f432'
+      ctx2d.fillStyle = lime
       ctx2d.font = '14px JetBrains Mono, monospace'
       drops.forEach((y, i) => {
         ctx2d.fillText(chars[Math.floor(Math.random() * chars.length)]!, i * 16, y * 16)
@@ -87,6 +89,10 @@ useHead(() => ({
 
 <template>
   <div>
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-20 focus:z-[400] focus:rounded focus:bg-lime focus:px-4 focus:py-3 focus:font-mono focus:text-sm focus:text-on-lime"
+    >{{ t('a11y.skip') }}</a>
     <AuroraBackground />
     <MagneticCursor />
     <SiteNav ref="navRef" @navigate="scrollTo" />
