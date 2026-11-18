@@ -38,7 +38,7 @@ html.light {
   --text: #141519;
   --text-muted: #5c5e66;
   --line: rgba(20, 21, 25, 0.12);
-  --lime: #4f6a00; /* was #5d7a00: 3.73:1 on ink-3; now >= 4.67:1 on ink, ink-2, ink-3 */
+  --lime: #4f6a00; /* darkened 2026-11-18: the previous lime was 3.73:1 on ink-3; now >= 4.67:1 on ink, ink-2, ink-3 */
   --on-lime: #f4f3ee; /* light text on the darker lime: 5.57:1 (dark text was 3.98:1) */
   --lime-dim: rgba(79, 106, 0, 0.07); /* 0.1 left lime text on it at 4.49:1 */
   --glow: rgba(93, 122, 0, 0.05);
