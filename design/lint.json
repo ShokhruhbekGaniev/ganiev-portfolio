@@ -1,0 +1,36 @@
+{
+  "include": [
+    "app/**/*"
+  ],
+  "exclude": [],
+  "tokenFiles": [
+    "app/assets/css/main.css"
+  ],
+  "allow": [
+    {
+      "rule": "blur",
+      "reason": "modal backdrop: separates the command palette dialog from the page behind it",
+      "files": [
+        "app/components/CommandPalette.vue"
+      ]
+    },
+    {
+      "rule": "shadow",
+      "reason": "elevation of the command palette dialog above the page",
+      "files": [
+        "app/components/CommandPalette.vue"
+      ]
+    },
+    {
+      "rule": "blur",
+      "reason": "fixed header over scrolling content: keeps nav labels legible over any section",
+      "files": [
+        "app/components/SiteNav.vue"
+      ]
+    }
+  ],
+  "allowNamedColors": [
+    "transparent"
+  ],
+  "baseline": "design/lint-baseline.json"
+}

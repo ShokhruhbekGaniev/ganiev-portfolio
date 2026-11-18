@@ -85,7 +85,7 @@ onUnmounted(() => ctx?.revert())
           target="_blank"
           rel="noopener"
           data-magnetic
-          class="tg-cta group inline-flex cursor-pointer items-center gap-4 rounded-full bg-lime px-10 py-5 font-mono text-base font-semibold uppercase tracking-[0.1em] text-[#0a0b0d] transition-opacity duration-200 hover:opacity-90 md:px-12 md:py-6 md:text-lg"
+          class="tg-cta group inline-flex cursor-pointer items-center gap-4 rounded-full bg-lime px-10 py-5 font-mono text-base font-semibold uppercase tracking-[0.1em] text-on-lime transition-opacity duration-200 hover:opacity-90 md:px-12 md:py-6 md:text-lg"
         >
           <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M11.94 2a10 10 0 1 0 .12 20 10 10 0 0 0-.12-20Zm4.9 6.8-1.65 7.78c-.12.55-.45.69-.91.43l-2.52-1.86-1.21 1.17c-.14.14-.25.25-.5.25l.18-2.56 4.65-4.2c.2-.18-.05-.28-.31-.1l-5.75 3.62-2.48-.77c-.54-.17-.55-.54.11-.8l9.7-3.73c.45-.17.84.1.69.77Z" />
@@ -103,7 +103,7 @@ onUnmounted(() => ctx?.revert())
             target="_blank"
             rel="noopener"
             data-magnetic
-            class="inline-flex cursor-pointer items-center rounded-full border border-line px-5 py-2.5 font-mono text-xs uppercase tracking-[0.12em] text-muted transition-colors duration-200 hover:border-lime/50 hover:text-lime"
+            class="inline-flex min-h-11 cursor-pointer items-center rounded-full border border-line px-5 py-2.5 font-mono text-xs uppercase tracking-[0.12em] text-muted transition-colors duration-200 hover:border-lime/50 hover:text-lime"
           >
             {{ social.label }}
           </a>
@@ -111,7 +111,7 @@ onUnmounted(() => ctx?.revert())
             href="/Shokhrukhbek_Ganiev_CV.pdf"
             download
             data-magnetic
-            class="inline-flex cursor-pointer items-center gap-2 rounded-full border border-lime/50 px-5 py-2.5 font-mono text-xs uppercase tracking-[0.12em] text-lime transition-colors duration-200 hover:bg-lime-dim"
+            class="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-full border border-lime/50 px-5 py-2.5 font-mono text-xs uppercase tracking-[0.12em] text-lime transition-colors duration-200 hover:bg-lime-dim"
           >
             {{ t('contact.downloadCv') }}
             <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">

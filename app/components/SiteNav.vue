@@ -28,6 +28,10 @@ function toggleTheme() {
   emit('toggleTheme')
 }
 
+function openPalette() {
+  window.dispatchEvent(new CustomEvent('open-palette'))
+}
+
 defineExpose({ toggleTheme })
 </script>
 
@@ -41,7 +45,7 @@ defineExpose({ toggleTheme })
       aria-label="Main navigation"
     >
       <button
-        class="font-mono text-sm font-medium tracking-widest text-body cursor-pointer transition-colors duration-200 hover:text-lime"
+        class="inline-flex min-h-11 min-w-11 items-center justify-center font-mono text-sm font-medium tracking-widest text-body cursor-pointer transition-colors duration-200 hover:text-lime"
         aria-label="Scroll to top"
         @click="emit('navigate', '#hero')"
       >
@@ -52,7 +56,7 @@ defineExpose({ toggleTheme })
         <ul class="hidden items-center gap-1 lg:flex">
           <li v-for="link in links" :key="link.target">
             <button
-              class="cursor-pointer rounded px-3 py-2 font-mono text-xs uppercase tracking-[0.15em] text-muted transition-colors duration-200 hover:text-lime"
+              class="inline-flex min-h-11 cursor-pointer items-center rounded px-3 font-mono text-xs uppercase tracking-[0.15em] text-muted transition-colors duration-200 hover:text-lime"
               @click="emit('navigate', link.target)"
             >
               {{ link.label }}
@@ -60,13 +64,22 @@ defineExpose({ toggleTheme })
           </li>
         </ul>
 
+        <!-- below lg the section links are hidden: this opens the command palette with the same jumps -->
+        <button
+          class="inline-flex min-h-11 cursor-pointer items-center rounded-full border border-line px-4 font-mono text-xs uppercase tracking-[0.15em] text-muted transition-colors duration-200 hover:text-lime lg:hidden"
+          aria-haspopup="dialog"
+          @click="openPalette"
+        >
+          {{ t('nav.menu') }}
+        </button>
+
         <!-- language switcher -->
         <div class="flex items-center overflow-hidden rounded-full border border-line">
           <button
             v-for="code in locales"
             :key="code"
-            class="cursor-pointer px-2.5 py-1.5 font-mono text-[11px] uppercase tracking-wider transition-colors duration-200"
-            :class="locale === code ? 'bg-lime text-[#0a0b0d] font-bold' : 'text-muted hover:text-lime'"
+            class="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center px-2.5 font-mono text-xs uppercase tracking-wider transition-colors duration-200"
+            :class="locale === code ? 'bg-lime text-on-lime font-bold' : 'text-muted hover:text-lime'"
             :aria-label="`Switch language to ${code}`"
             @click="setLocale(code)"
           >
@@ -75,7 +88,7 @@ defineExpose({ toggleTheme })
         </div>
 
         <button
-          class="cursor-pointer rounded p-2 text-muted transition-colors duration-200 hover:text-lime"
+          class="inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded text-muted transition-colors duration-200 hover:text-lime"
           :aria-label="isLight ? 'Switch to dark theme' : 'Switch to light theme'"
           @click="toggleTheme"
         >

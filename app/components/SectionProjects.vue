@@ -91,8 +91,8 @@ onUnmounted(() => ctx?.revert())
       >
         <div class="flex items-center justify-between">
           <span
-            class="rounded-full px-3 py-1 font-mono text-[11px] uppercase tracking-wider"
-            :class="project.accent ? 'bg-lime text-[#0a0b0d]' : 'border border-line text-muted'"
+            class="rounded-full px-3 py-1 font-mono text-xs uppercase tracking-wider"
+            :class="project.accent ? 'bg-lime text-on-lime' : 'border border-line text-muted'"
           >
             {{ t(`work.${project.badgeKey}`) }}
           </span>
@@ -112,7 +112,7 @@ onUnmounted(() => ctx?.revert())
           <li
             v-for="tech in project.stack"
             :key="tech"
-            class="rounded-full border border-line px-3 py-1 font-mono text-[11px] uppercase tracking-wider text-muted"
+            class="rounded-full border border-line px-3 py-1 font-mono text-xs uppercase tracking-wider text-muted"
           >
             {{ tech }}
           </li>

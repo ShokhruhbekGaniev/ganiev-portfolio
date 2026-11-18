@@ -4,7 +4,8 @@
     "services": "Yo‘nalishlar",
     "work": "Ishlar",
     "terminal": "Terminal",
-    "contact": "Aloqa"
+    "contact": "Aloqa",
+    "menu": "Menyu"
   },
   "hero": {
     "label": "Full-Stack Developer · AI integratsiyalari · Toshkent",
@@ -128,7 +129,8 @@
     "langChanged": "Til almashtirildi.",
     "themeChanged": "Mavzu almashtirildi.",
     "notFound": "Buyruq topilmadi. `help` yozing.",
-    "sudo": "Yaxshi urinish. Lekin bu yerda root faqat men :)"
+    "sudo": "Yaxshi urinish. Lekin bu yerda root faqat men :)",
+    "placeholder": "help deb yozing…"
   },
   "contact": {
     "label": "05 / Aloqa",
@@ -157,5 +159,8 @@
   "meta": {
     "title": "Shokhrukhbek Ganiev — Full-Stack Developer · AI",
     "description": "Go, TypeScript va Vue/Nuxt asosida mahsulotlar yarataman: ovozli kiritish, LLM API va vositalardan foydalanuvchi AI yordamchilar. Kundalik dasturlashda Claude Code, Codex va AI agentlardan faol foydalanaman."
+  },
+  "a11y": {
+    "skip": "Asosiy qismga o'tish"
   }
 }

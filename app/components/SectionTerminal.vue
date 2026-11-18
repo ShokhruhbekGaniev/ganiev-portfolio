@@ -63,7 +63,7 @@ function run() {
       print(t('terminal.sudo'))
       break
     case 'ls':
-      print('about/  services/  work/  contact/  secrets/ 🔒')
+      print('about/  services/  work/  contact/  secrets/ [locked]')
       break
     case 'uptime':
       print('Commercial fintech development since November 2023')
@@ -118,9 +118,9 @@ onUnmounted(() => ctx?.revert())
     >
       <!-- title bar -->
       <div class="flex items-center gap-2 border-b border-line px-4 py-3">
-        <span class="h-3 w-3 rounded-full bg-[#ff5f57]" />
-        <span class="h-3 w-3 rounded-full bg-[#febc2e]" />
-        <span class="h-3 w-3 rounded-full bg-[#28c840]" />
+        <span class="h-3 w-3 rounded-full bg-chrome-red" />
+        <span class="h-3 w-3 rounded-full bg-chrome-yellow" />
+        <span class="h-3 w-3 rounded-full bg-chrome-green" />
         <span class="ml-3 font-mono text-xs text-muted">guest&#64;ganiev.dev — zsh</span>
       </div>
 
@@ -130,6 +130,7 @@ onUnmounted(() => ctx?.revert())
         class="h-72 cursor-text overflow-y-auto px-5 py-4 font-mono text-sm leading-relaxed md:h-80"
         @click="($refs.cmdInput as HTMLInputElement)?.focus()"
       >
+        <div aria-live="polite">
         <div v-for="(line, i) in history" :key="i" class="mb-1 whitespace-pre-wrap break-words">
           <template v-if="line.type === 'in'">
             <span class="text-lime">❯</span> <span class="text-body">{{ line.text }}</span>
@@ -137,6 +138,7 @@ onUnmounted(() => ctx?.revert())
           <template v-else>
             <span class="text-muted">{{ line.text }}</span>
           </template>
+        </div>
         </div>
 
         <!-- prompt -->
@@ -146,9 +148,10 @@ onUnmounted(() => ctx?.revert())
             ref="cmdInput"
             v-model="input"
             type="text"
-            class="w-full bg-transparent text-body caret-[var(--lime)] outline-none"
+            class="min-h-11 w-full bg-transparent text-body caret-[var(--lime)] outline-none placeholder:text-muted"
             spellcheck="false"
             autocomplete="off"
+            :placeholder="t('terminal.placeholder')"
             aria-label="Terminal input"
             @keydown.enter="run"
           />

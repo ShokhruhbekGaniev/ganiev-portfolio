@@ -14,6 +14,7 @@
   --text-muted: #8d8f96;
   --line: rgba(236, 234, 227, 0.1);
   --lime: #c6f432;
+  --on-lime: #0a0b0d; /* text on a lime fill: 15.4:1 */
   --lime-dim: rgba(198, 244, 50, 0.12);
   --glow: rgba(198, 244, 50, 0.07);
 
@@ -22,6 +23,11 @@
   --aurora-2: rgba(45, 212, 191, 0.1);
   --aurora-3: rgba(132, 204, 22, 0.08);
   --dot: rgba(236, 234, 227, 0.06);
+
+  /* window-chrome dots of the mock terminal and site (decorative, same in both themes) */
+  --chrome-red: #ff5f57;
+  --chrome-yellow: #febc2e;
+  --chrome-green: #28c840;
 }
 
 html.light {
@@ -32,8 +38,9 @@ html.light {
   --text: #141519;
   --text-muted: #5c5e66;
   --line: rgba(20, 21, 25, 0.12);
-  --lime: #5d7a00;
-  --lime-dim: rgba(93, 122, 0, 0.1);
+  --lime: #4f6a00; /* was #5d7a00: 3.73:1 on ink-3; now >= 4.67:1 on ink, ink-2, ink-3 */
+  --on-lime: #f4f3ee; /* light text on the darker lime: 5.57:1 (dark text was 3.98:1) */
+  --lime-dim: rgba(79, 106, 0, 0.07); /* 0.1 left lime text on it at 4.49:1 */
   --glow: rgba(93, 122, 0, 0.05);
 
   --aurora-1: rgba(163, 230, 53, 0.22);
@@ -52,6 +59,10 @@ html.light {
   --color-line: var(--line);
   --color-lime: var(--lime);
   --color-lime-dim: var(--lime-dim);
+  --color-on-lime: var(--on-lime);
+  --color-chrome-red: var(--chrome-red);
+  --color-chrome-yellow: var(--chrome-yellow);
+  --color-chrome-green: var(--chrome-green);
 
   --font-display: 'Clash Display', 'Space Grotesk', sans-serif;
   --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
@@ -78,7 +89,7 @@ body {
 
 ::selection {
   background: var(--lime);
-  color: #0a0b0d;
+  color: var(--on-lime);
 }
 
 :focus-visible {

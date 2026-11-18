@@ -70,8 +70,14 @@ function onKeydown(e: KeyboardEvent) {
   }
 }
 
-onMounted(() => window.addEventListener('keydown', onKeydown))
-onUnmounted(() => window.removeEventListener('keydown', onKeydown))
+onMounted(() => {
+  window.addEventListener('keydown', onKeydown)
+  window.addEventListener('open-palette', show) // the Menu button in SiteNav below lg
+})
+onUnmounted(() => {
+  window.removeEventListener('keydown', onKeydown)
+  window.removeEventListener('open-palette', show)
+})
 
 defineExpose({ show })
 </script>
@@ -102,7 +108,7 @@ defineExpose({ show })
             <template v-for="group in ['navigate', 'actions'] as const" :key="group">
               <li
                 v-if="filtered.some((c) => c.group === group)"
-                class="px-5 pb-1 pt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-muted"
+                class="px-5 pb-1 pt-3 font-mono text-xs uppercase tracking-[0.2em] text-muted"
               >
                 {{ t(`palette.${group}`) }}
               </li>
@@ -114,7 +120,7 @@ defineExpose({ show })
                   @click="runActive()"
                 >
                   {{ cmd.label() }}
-                  <span v-if="filtered.indexOf(cmd) === active" class="font-mono text-[10px] text-muted">↵</span>
+                  <span v-if="filtered.indexOf(cmd) === active" class="font-mono text-xs text-muted">↵</span>
                 </button>
               </li>
             </template>

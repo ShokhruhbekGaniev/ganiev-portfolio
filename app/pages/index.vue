@@ -14,7 +14,7 @@ useHead(() => ({
 </script>
 
 <template>
-  <main>
+  <main id="main" tabindex="-1" class="outline-none">
     <SectionHero @navigate="scrollTo" />
     <SectionAbout />
     <SectionServices />
